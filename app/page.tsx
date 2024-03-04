@@ -7,10 +7,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   return (
-    <main>
+    <div className="flex flex-col items-center pt-0">
       <MainHero/>
       <BentoCards/>
       <ServiceSection/>
-    </main>
+    </div>
   );
 }
