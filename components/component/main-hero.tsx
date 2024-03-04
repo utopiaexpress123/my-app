@@ -18,7 +18,7 @@ export function MainHero() {
         
       <main className="mt-20 mb-10 text-center">
         <Button className="mb-4 bg-transparent hover:bg-slate-100 shadow-rose-400/20 hover:shadow-red-400/30 shadow-xl hover:shadow-lg text-slate-400 hover:text-gray-500">
-          <BankCardIcon className="h-4 w-4" /> 
+          <BankCardIcon/> 
           <span className="tracking-wide text-rose-300 hover:text-rose-400 mr-2 ml-1 text-sm">
           Automated Income</span> Launch your AI service in 24h
         </Button>
