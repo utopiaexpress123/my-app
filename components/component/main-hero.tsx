@@ -22,8 +22,7 @@ export function MainHero() {
           <span className="tracking-wide text-rose-300 hover:text-rose-400 mr-2 ml-1 text-sm">
           Automated Income</span> Launch your AI service in 24h
         </Button>
-
-          <h1 className="pb-2 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center text-4xl font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]">
+          <h1 className="pb-2 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">
           Let humans do,
           <br />
           what they really want to do
@@ -35,14 +34,14 @@ export function MainHero() {
         </p>
         <div className="mt-6 mb-5">
 
-          <Button className="transition-all	tracking-wide text-sm font-normal bg-transparent text-slate-400 shadow-xl shadow-slate-400/50 hover:shadow-xl hover:shadow-sky-300/60 rounded-full dark:border-gray-900" asChild>
+          <Button className="h-13 transition-all	tracking-wide text-sm font-normal bg-transparent text-slate-400 shadow-xl shadow-slate-400/50 hover:shadow-xl hover:shadow-sky-300/60 rounded-full dark:border-gray-900" asChild>
             <Link href="#">
               <Avatar>
-                <AvatarImage src="https://www.utopia.express/img/kep.gif" />
+                <AvatarImage src="https://clonegirls.utopia.express/kep.gif" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <span className="tracking-wide text-slate-400 hover:text-rose-400 mr-2 ml-1 text-sm">
-          Fun & Recreation</span>
+          </span>
               <span className="transition-all mr-3 text-slate-500 hover:text-slate-400">Create your Digital Counterpart</span>
               <Badge variant="default">NEW</Badge>
             </Link>

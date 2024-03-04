@@ -12,12 +12,12 @@ import Image from "next/image";
 
 export function BentoCards() {
   return (
-    <div className="mx-auto sm:w-auto md:w-3/4">
-      <div className="flex flex-row items-center space-x-4 justify-self-center">
+    <div className="mx-auto sm:w-full md:w-5/6">
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center space-x-4 justify-self-center">
 
-        <div className="basis-1/3 p-5">
-          <p className="text-lg font-normal text-slate-500 text-end">Meet your photogenic</p>
-          <h1 className="pb-4  bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-end text-8xl font-extrabold tracking-tighter text-transparent">Clone</h1>
+        <div className="p-4 sm:p-6">
+          <p className="text-lg font-normal text-slate-500 sm:text-start md:text-end">Meet your photogenic</p>
+          <h1 className="pb-4  bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">Clone</h1>
           <div className="flex flex-row space-x-6">
             <Card className="h-full shadow-2xl rounded-3xl overflow-hidden bg-sky-100	">
               <div className="relative ">
@@ -48,10 +48,9 @@ export function BentoCards() {
               </div>
             </Card>
           </div>
-
         </div>
 
-        <div className="basis-1/3">
+        <div className=" p-4">
           <Card className="h-full rounded-3xl shadow-2xl overflow-hidden bg-transparent">
             <div className="relative aspect-square">
               <Button variant="ghost" className="font-thin p-6 text-xs absolute right-0 text-slate-300">ID 967890</Button>
@@ -72,8 +71,8 @@ export function BentoCards() {
           </Card>
         </div>
 
-        <div className="basis-1/3 p-5">
-          <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-end text-8xl font-extrabold tracking-tighter text-transparent">21<span>€</span></h1>
+        <div className=" p-4">
+          <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-start text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span>€</span></h1>
       
           <div className="space-y-1">
             <p className="text-sm text-slate-400">
@@ -113,7 +112,7 @@ export function BentoCards() {
       </div>
       <Separator className="my-3" />
 
-              <Button className="justify-items-stretch mt-4 w-full transition-all	tracking-wide text-sm font-normal bg-transparent hover:bg-slate-200 text-slate-500 shadow-xl shadow-slate-500/20 hover:shadow-xl hover:shadow-slate-500/40 rounded-full dark:border-gray-900" asChild>
+              <Button className="h-13 justify-items-stretch mt-4 w-full transition-all	tracking-wide text-sm font-normal bg-transparent hover:bg-slate-200 text-slate-500 shadow-xl shadow-slate-500/20 hover:shadow-xl hover:shadow-slate-500/40 rounded-full dark:border-gray-900" asChild>
                 <Link href="#">
                   <Avatar>
                     <AvatarImage src="https://i.postimg.cc/nrR0Kd8R/girl-icon.png" />
