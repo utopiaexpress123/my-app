@@ -3,18 +3,16 @@
  * @see https://v0.dev/t/G2rJ1wK46q0
  */
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import logo from "@/public/logo.png";
 
 export function NavBar() {
   return (
     <nav className="fixed flex flex-row items-center h-16 w-full border-b border-slate-200 shrink-0 px-4 md:px-6">
       <Link className="mr-auto ml-2" href="#">
-        <UtopiaIcon className="" />
+        <UtopiaIcon/>
       </Link>
       <div className="ml-auto flex items-center gap-4">
-        <FacebookIcon className="text-white fill-current" />
-        <TwitterIcon className="text-white fill-current" />
+        <FacebookIcon/>
+        <TwitterIcon/>
       </div>
     </nav>
   )
