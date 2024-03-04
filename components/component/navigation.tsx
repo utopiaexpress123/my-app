@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import Image from "@/public/logo.png";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Navigation() {
     return (
         <header className="flex justify-between items-center">
             <div className="text-white text-2xl font-bold">
             <Link href="/">
-            <img
+            <Image
             src={logo.src}
             alt="Utopia Express"
             className="object-cover w-full h-full"
