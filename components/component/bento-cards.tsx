@@ -10,6 +10,7 @@ import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { badgeVariants } from "@/components/ui/badge";
+import Image from "next/image";
 
 export function BentoCards() {
   return (
@@ -22,7 +23,7 @@ export function BentoCards() {
           <div className="flex flex-row">
             <Card className=" h-full shadow-2xl rounded-3xl overflow-hidden bg-sky-100	">
               <div className="relative">
-                <img
+                <Image
                   alt="Image"
                   className="object-cover"
                   src="girl2.png"
@@ -34,7 +35,7 @@ export function BentoCards() {
             </Card>
             <Card className=" h-full shadow-2xl rounded-3xl overflow-hidden bg-sky-100	">
               <div className="relative">
-                <img
+                <Image
                   alt="Image"
                   className="object-cover"
                   src="girls.png"
@@ -53,7 +54,7 @@ export function BentoCards() {
             <div className="relative aspect-square">
               
               <Button variant="ghost" className="font-thin p-6 text-xs absolute right-0 text-slate-300">ID 967890</Button>
-              <img
+              <Image
                 alt="Image"
                 className="object-cover"
                 src="/boy1.png"
