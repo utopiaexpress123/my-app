@@ -12,19 +12,21 @@ import Image from "next/image";
 
 export function BentoCards() {
   return (
-    <div className="w-3/4 mx-auto">
+    <div className="mx-auto sm:w-auto md:w-3/4">
       <div className="flex flex-row items-center space-x-4 justify-self-center">
 
         <div className="basis-1/3 p-5">
           <p className="text-lg font-normal text-slate-500 text-end">Meet your photogenic</p>
           <h1 className="pb-4  bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-end text-8xl font-extrabold tracking-tighter text-transparent">Clone</h1>
-          <div className="flex flex-row">
-            <Card className=" h-full shadow-2xl rounded-3xl overflow-hidden bg-sky-100	">
-              <div className="relative">
+          <div className="flex flex-row space-x-6">
+            <Card className="h-full shadow-2xl rounded-3xl overflow-hidden bg-sky-100	">
+              <div className="relative ">
                 <Image
                   alt="Image"
                   className="object-cover"
-                  src="girl2.png"
+                  src="/girl2.png"
+                  width= "260"
+                  height= "260"
                   style={{
                     objectFit: "cover",
                   }}
@@ -36,7 +38,9 @@ export function BentoCards() {
                 <Image
                   alt="Image"
                   className="object-cover"
-                  src="girls.png"
+                  src="/girls.png"
+                  width= "260"
+                  height= "380"
                   style={{
                     objectFit: "cover",
                   }}
@@ -50,18 +54,19 @@ export function BentoCards() {
         <div className="basis-1/3">
           <Card className="h-full rounded-3xl shadow-2xl overflow-hidden bg-transparent">
             <div className="relative aspect-square">
-              
               <Button variant="ghost" className="font-thin p-6 text-xs absolute right-0 text-slate-300">ID 967890</Button>
               <Image
                 alt="Image"
                 className="object-cover"
                 src="/boy1.png"
+                width= "430"
+                height= "280"
                 style={{
                   objectFit: "cover",
                 }}
               />
               <div className="absolute bottom-0  flex flex-col items-center justify-center gap-2 p-6">
-
+                <p>Our AI-based service able "learn" your unique features and reproduce them down to the smallest detail.</p>
               </div>
             </div>
           </Card>

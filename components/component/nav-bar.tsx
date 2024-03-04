@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function NavBar() {
   return (
-    <nav className="fixed flex flex-row items-center h-16 w-full border-b border-slate-200 shrink-0 px-4 md:px-6">
+    <nav className="fixed flex md:flex-row items-center h-16 w-full border-b border-slate-200 shrink-0 px-4 md:px-6">
       <Link className="mr-auto ml-2" href="#">
         <UtopiaIcon/>
       </Link>
