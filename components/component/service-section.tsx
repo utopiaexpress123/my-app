@@ -3,34 +3,36 @@
  * @see https://v0.dev/t/yDVLhzuCgqy
  */
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export function ServiceSection() {
   return (
-    <section className="w-full pt-6 md:pt-12">
-      <div className="container flex flex-col gap-6 px-6 md:px-10 lg:px-16 xl:px-20">
-        <div className="grid gap-6 md:gap-10 items-center">
-          <div className="order-2 flex items-center">
-            <div className="grid gap-4 text-center md:gap-6 md:text-left">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+    <section className="mx-auto sm:w-full md:w-3/4 pt-6 md:mt-12 items-center text-center">
+        <Button className="text-center bg-transparent border border-slate-300 hover:bg-slate-200 shadow-stone-500/20 hover:shadow-rose-400/30 shadow-lg hover:shadow-xl text-slate-400 hover:text-gray-500">
+          <BankCardIcon/> 
+          <span className="tracking-wide text-orange-400 hover:text-rose-400 text-sm">
+          Automated Income</span> Launch your AI service in 24h
+        </Button>
+              <p className="text-center">
+              <span className="tracking-wide text-rose-300 hover:text-rose-400  text-sm">
+                Automated Income</span> Launch your AI service in 24h
+              </p>
+              <h1 className="pb-2 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">
                 The Complete Platform for Building the Web
-              </h2>
+              </h1>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
                 Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable.
                 Open Source.
               </p>
-            </div>
-          </div>
-          <div className="order-1">
-            <Image
-              alt="Hero"
-              className="mx-auto aspect-[2/1] overflow-hidden rounded-lg object-cover object-center"
-              height="400"
-              src="/placeholder.svg"
-              width="800"
-            />
-          </div>
-        </div>
-      </div>
     </section>
+  )
+}
+
+function BankCardIcon() {
+  return (
+<svg className="fill-orange-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
+  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clip-rule="evenodd" />
+</svg>
   )
 }
