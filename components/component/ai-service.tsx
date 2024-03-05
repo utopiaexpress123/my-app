@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
+import Image from "next/image";
 
 export function AiService() {
   return (
     <section className="relative w-full overflow-hidden">
-      <img
+      <Image
         alt="Hero"
         className="absolute inset-0 z-[-1] object-cover"
         height="1024"
