@@ -11,33 +11,34 @@ import {
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function CarouselSection() {
   return (
     <div className="w-full">
         <div className="grid items-center gap-0 lg:grid-cols-2">
-          <div className="md:pr-16 md:border-r-2 md:border-slate-300">
+          <div className="md:pr-16 md:border-r-2 md:border-stone-300">
             <div className="relative pt-40 pb-44 pl-10 pr-10 md:pr-0">
-              <p className="md:text-end"><Badge className="shadow-md bg-lime-500">Coming soon</Badge></p>
               <h1 className="md:text-end pb-4 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl">
                 Bring to life your Clone
               </h1>
-              <p className="md:text-end text-gray-500 md:text-xl dark:text-gray-400">
-              Take your Clone ID and shoot a selfie on the South Pole, or mammoths in the background, 
-              improve your Tinder profile, or make ads with your -super attractive- face?
+              <p className="pt-3 md:text-end md:pl-8 [text-wrap:balance] text-gray-500 md:text-xl dark:text-gray-400">
+              Take your Clone ID and create any photo of your Clone 
               </p>
-              <div className="absolute right-0 mt-4">
-                <div className="w-96 h-14 border-4 border-lime-500 bg-transparent h-13 w-100 transition-all	tracking-wide text-sm font-normal  hover:to-stone-700 text-slate-300 shadow-xl shadow-slate-700/20  hover:shadow-slate-500/40 rounded-full">
-                  <div className="relative">
-                    <p className=" text-slate-500 text-lg pt-2 pl-6"> @me hiking in the mountains</p>
-                    <Separator orientation="vertical" className="absolute right-14 top-0 h-12 bg-lime-500" />
-                    <span className="absolute right-4 top-3"><SendIcon/></span>
-                  </div> 
-                </div>
+              <div className="text-end pt-3">
+              <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
+                  <div>
+                    <span className="transition-all ml-2 mr-0 text-slate-300 hover:text-slate-400">Get your Clone ID</span>  
+                    <Badge variant="female" className="ml-3">Female</Badge>
+                    <Badge variant="male" className="ml-2">Male</Badge>
+                  </div>
+              </Button>
               </div>
             </div>
           </div>
-          <div className="max-h-64 flex items-center md:pl-16 hover:cursor-e-resize">
+          <div className="max-h-64 flex items-center md:pl-16 hover:cursor-e-resize relative">
             <Carousel>
               <CarouselContent>
                 <CarouselItem className="basis-1/3">
@@ -58,7 +59,7 @@ export function CarouselSection() {
                     width="770"
                   />
                 </CarouselItem>
-                <CarouselItem className="basis-1/2">
+                <CarouselItem className="basis-1/3">
                   <img
                     alt="Image"
                     className="transition-all opacity-20 hover:opacity-100 saturate-0 hover:saturate-100 w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
@@ -81,6 +82,15 @@ function SendIcon() {
   return (
 <svg width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
   <path className="fill-lime-500" d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+</svg>
+  )
+}
+
+function BankCardIcon() {
+  return (
+<svg className="fill-orange-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
+  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clip-rule="evenodd" />
 </svg>
   )
 }

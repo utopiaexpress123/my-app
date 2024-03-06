@@ -22,6 +22,16 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Video } from "../ui/video";
+
 
 
 
@@ -112,45 +122,53 @@ export function BentoCards() {
             Our AI-based service able to "learn" your unique features and reproduce them down to the smallest detail.
             </p>
 
-              <Button className="border border-s border-slate-800 bg-gradient-to-tl from-stone-900 to-stone-700 h-13 w-100 justify-items-stretch mt-3 transition-all	tracking-wide text-sm font-normal bg-transparent hover:to-stone-700 text-slate-300 shadow-lg shadow-stone-600/60 hover:shadow-xl hover:shadow-slate-500/40 rounded-full" asChild>
-                <Link href="#">
-                  <Avatar>
-                    <AvatarImage src="https://i.postimg.cc/nrR0Kd8R/girl-icon.png" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
-                  <span className="transition-all mr-3 text-slate-300 hover:text-slate-400"></span>
-                  Get your HQ potraits 
-                  <Badge variant="outline" className="ml-5">Select type</Badge>
-                </Link>
+              <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
+                  <div>
+                    <span className="transition-all ml-2 mr-0 text-slate-300 hover:text-slate-400">Get your potraits</span>  
+                    <Badge variant="female" className="ml-3">
+                      <Link href="https://clonegirls.utopia.express/login">
+                        Female
+                      </Link>
+                      </Badge>
+                    <Badge variant="male" className="ml-2">
+                      <Link href="https://clone.utopia.express/login">
+                      Male
+                      </Link>
+                      </Badge>
+                  </div>
               </Button>
 
-              <Separator className="my-3" />
-              <div className="flex h-5 space-x-3 text-sm text-slate-400">
-                <div className="font-bold w-1/4">1 Clone ID</div>
-                <Separator orientation="vertical" />
-                <div className="w-1/2">+12 photos</div>
-                <Separator orientation="vertical" />
-                <div className="text-end w-1/4">21 eur</div>
+              <Separator className="my-3  bg-transparent"/>
+              <div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
+                <div className="w-full"><span className="font-bold w-24">1 Clone ID</span> + 1x12 photos</div>
+                <div className="text-end w-14 text-fuchsia-400 relative">
+                  <span className="pr-5">21</span>
+                  <span className="absolute top-1  right-0"><EurIcon/></span>
+                </div>
               </div>
-              <Separator className="my-3" />
-              <div className="flex h-5 space-x-3 text-sm text-slate-400">
-                <div className="font-bold w-1/4">3 Clone ID</div>
-                <Separator orientation="vertical" />
-                <div className="w-1/2">+3x12 photos</div>
-                <Separator orientation="vertical" />
-                <div className="text-end w-1/4">60 eur</div>
+              <Separator className="my-3 bg-slate-200" />
+              <div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
+              <div className="w-full"><span className="font-bold w-24">3 Clone ID</span> + 3x12 photos</div>
+                <div className="w-58"></div>
+                <div className="text-end w-14 text-fuchsia-400 relative">
+                  <span className="pr-5">59</span>
+                  <span className="absolute top-1  right-0"><EurIcon/></span>
+                </div>
               </div>
-              <Separator className="my-3" />
-              <div className="flex h-5 space-x-3 text-sm text-slate-400">
-                <div className="font-bold w-1/4">5 Clone ID</div>
-                <Separator orientation="vertical" />
-                <div className="w-1/2">+5x12 photos</div>
-                <Separator orientation="vertical" />
-                <div className="text-end w-1/4">95 eur</div>
+              <Separator className="my-3 bg-slate-200" />
+              <div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
+              <div className="w-full"><span className="font-bold w-24">5 Clone ID</span> + 5x12 photos</div>
+                <div className="w-58"></div>
+                <div className="text-end w-14 text-fuchsia-400 relative">
+                  <span className="pr-5">95</span>
+                  <span className="absolute top-1  right-0"><EurIcon/></span>
+                </div>
               </div>
-              <Separator className="my-3" />
+              <Separator className="my-3 bg-slate-200" />
               <p className=""></p>
         </div>
+<Video/>
+
 
       </div>
     </div>
@@ -165,6 +183,15 @@ function ImageInfoIcon() {
 </svg>
   )
 }
+function EurIcon() {
+  return (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-4 h-4">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+  </svg>
+  )
+}
+
+
 
 
 

@@ -13,12 +13,13 @@ import { CarouselSection } from "@/components/component/carousel-section";
 export default function Home() {
   return (
 
-    <div>
+    <div className="pb-20">
       <div className="pt-20">
         <MainHero/>
       </div>
         <BentoCards/>
         <CarouselSection/>
+        <AiService/>
     </div>
   );
 }

@@ -13,7 +13,7 @@ export function AiService() {
   return (
     <section>
 
-        <div className="py-20 mx-auto grid grid-cols-1 md:grid-cols-10 md:w-5/6">
+        <div id="launch-service" className="py-20 mx-auto grid grid-cols-1 md:grid-cols-10 md:w-5/6">
 
           <div className="w-full md:col-span-7">
             <div className="grid grid-cols-2 md:grid-cols-6 gap-8 p-8">

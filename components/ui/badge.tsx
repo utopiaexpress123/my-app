@@ -11,10 +11,14 @@ const badgeVariants = cva(
         default:
           "mr-0 rounded-full border-transparent bg-fuchsia-400	hover:bg-fuchsia-300 text-slate-50",
         secondary:
-          "rounded-full border-transparent bg-sky-400 text-primary-foreground hover:bg-sky-300",
+          "pl-2 pr-2 pt-1 pb-1 rounded-full border-transparent bg-fuchsia-400 text-primary-foreground hover:bg-sky-300",
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
-        outline: "rounded-full pt-2 pb-2 pl-3 pr-3 border-fuchsia-300 hover:border-fuchsia-300 text-slate-300 bg-transparent border border-fuchsia-400",
+        outline: "rounded-full border-slate-300 text-slate-700 bg-slate-200 border-1",
+        male:
+          "pl-2 pr-2 pt-1 pb-1 rounded-full border-transparent bg-sky-400 text-slate-100 hover:bg-sky-500",
+        female:
+          "pl-2 pr-2 pt-1 pb-1 rounded-full border-transparent bg-fuchsia-400 text-slate-100 hover:bg-fuchsia-500",
       },
     },
     defaultVariants: {
