@@ -30,7 +30,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Video } from "@/ui/video";
+
 
 
 
@@ -167,9 +167,6 @@ export function BentoCards() {
               <Separator className="my-3 bg-slate-200" />
               <p className=""></p>
         </div>
-<Video/>
-
-
       </div>
     </div>
   )
