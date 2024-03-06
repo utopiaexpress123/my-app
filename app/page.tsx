@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { CarouselSection } from "@/components/component/carousel-section";
-import Chatbot from "@/components/component/webchat";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         <BentoCards/>
         <CarouselSection/>
         <AiService/>
-        <Chatbot/>
     </div>
   );
 }
