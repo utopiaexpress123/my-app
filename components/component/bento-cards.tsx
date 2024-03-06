@@ -11,28 +11,10 @@ import { Badge } from "@/components/ui/badge";
 import { badgeVariants } from "@/components/ui/badge";
 import Image from "next/image";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-
-
-
 
 
 export function BentoCards() {
@@ -121,7 +103,6 @@ export function BentoCards() {
             <p className="text-lg font-normal text-slate-500 text-start">
             Our AI-based service able to "learn" your unique features and reproduce them down to the smallest detail.
             </p>
-
               <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
                   <div>
                     <span className="transition-all ml-2 mr-0 text-slate-300 hover:text-slate-400">Get your potraits</span>  
@@ -137,7 +118,7 @@ export function BentoCards() {
                       </Badge>
                   </div>
               </Button>
-
+                
               <Separator className="my-3  bg-transparent"/>
               <div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
                 <div className="w-full"><span className="font-bold w-24">1 Clone ID</span> + 1x12 photos</div>
