@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { badgeVariants } from "@/components/ui/badge";
 import Image from "next/image";
 import {
   Select,
@@ -111,7 +112,6 @@ export function BentoCards() {
             Our AI-based service able to "learn" your unique features and reproduce them down to the smallest detail.
             </p>
 
-
               <Button className="border border-s border-slate-800 bg-gradient-to-tl from-stone-900 to-stone-700 h-13 w-100 justify-items-stretch mt-3 transition-all	tracking-wide text-sm font-normal bg-transparent hover:to-stone-700 text-slate-300 shadow-lg shadow-stone-600/60 hover:shadow-xl hover:shadow-slate-500/40 rounded-full" asChild>
                 <Link href="#">
                   <Avatar>
@@ -119,16 +119,8 @@ export function BentoCards() {
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
                   <span className="transition-all mr-3 text-slate-300 hover:text-slate-400"></span>
-                  Get your potraits 
-                  <Select>
-                    <SelectTrigger className="w-[120px] ml-3">
-                      <SelectValue placeholder="Select type" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="female">Female</SelectItem>
-                      <SelectItem value="male">Male</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  Get your HQ potraits 
+                  <Badge variant="outline" className="ml-5">Select type</Badge>
                 </Link>
               </Button>
 

@@ -14,7 +14,7 @@ const badgeVariants = cva(
           "rounded-full border-transparent bg-sky-400 text-primary-foreground hover:bg-sky-300",
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
-        outline: "rounded-full border-slate-300 text-slate-700 bg-slate-200 border-1",
+        outline: "rounded-full pt-2 pb-2 pl-3 pr-3 border-fuchsia-300 hover:border-fuchsia-300 text-slate-300 bg-transparent border border-fuchsia-400",
       },
     },
     defaultVariants: {

@@ -17,14 +17,8 @@ export default function Home() {
       <div className="pt-20">
         <MainHero/>
       </div>
-        
         <BentoCards/>
-
         <CarouselSection/>
-
-      <div className="w-full">
-        <AiService/>
-      </div>
     </div>
   );
 }

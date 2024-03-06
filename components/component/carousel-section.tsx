@@ -10,50 +10,58 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
-
-
+import { Separator } from "@/components/ui/separator";
 
 export function CarouselSection() {
   return (
     <div className="w-full">
         <div className="grid items-center gap-0 lg:grid-cols-2">
           <div className="md:pr-16 md:border-r-2 md:border-slate-300">
-            <div className="pt-44 pb-44">
-              <p className="text-end"><Badge>Coming soon</Badge></p>
-              <h1 className="md:text-end pb-4 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">
+            <div className="relative pt-40 pb-44 pl-10 pr-10 md:pr-0">
+              <p className="md:text-end"><Badge className="shadow-md bg-lime-500">Coming soon</Badge></p>
+              <h1 className="md:text-end pb-4 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl">
                 Bring to life your Clone
               </h1>
               <p className="md:text-end text-gray-500 md:text-xl dark:text-gray-400">
-                The best place to deploy your frontend. Instantly preview sites. Automate your build process. Integrate
-                with GitHub.
+              Take your Clone ID and shoot a selfie on the South Pole, or mammoths in the background, 
+              improve your Tinder profile, or make ads with your -super attractive- face?
               </p>
+              <div className="absolute right-0 mt-4">
+                <div className="w-96 h-14 border-4 border-lime-500 bg-transparent h-13 w-100 transition-all	tracking-wide text-sm font-normal  hover:to-stone-700 text-slate-300 shadow-xl shadow-slate-700/20  hover:shadow-slate-500/40 rounded-full">
+                  <div className="relative">
+                    <p className=" text-slate-500 text-lg pt-2 pl-6"> @me hiking in the mountains</p>
+                    <Separator orientation="vertical" className="absolute right-14 top-0 h-12 bg-lime-500" />
+                    <span className="absolute right-4 top-3"><SendIcon/></span>
+                  </div> 
+                </div>
+              </div>
             </div>
           </div>
-          <div className="max-h-64 flex items-center md:pl-16 md:pt-44 md:pb-44 hover:cursor-e-resize">
+          <div className="max-h-64 flex items-center md:pl-16 hover:cursor-e-resize">
             <Carousel>
               <CarouselContent>
                 <CarouselItem className="basis-1/3">
                   <img
                     alt="Image"
-                    className="w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
-                    height="1200"
-                    src="/c1.png"
-                    width="770"
-                  />
-                </CarouselItem>
-                <CarouselItem className="basis-1/3">
-                  <img
-                    alt="Image"
-                    className="w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
+                    className="transition-all opacity-20 first:opacity-100 first:saturate-100 hover:opacity-100 saturate-0 hover:saturate-100 w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
                     height="1200"
                     src="/c2.png"
                     width="960"
                   />
                 </CarouselItem>
+                <CarouselItem className="basis-1/3">
+                  <img
+                    alt="Image"
+                    className="transition-all opacity-20 hover:opacity-100 saturate-0 hover:saturate-100 w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
+                    height="1200"
+                    src="/c1.png"
+                    width="770"
+                  />
+                </CarouselItem>
                 <CarouselItem className="basis-1/2">
                   <img
                     alt="Image"
-                    className="w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
+                    className="transition-all opacity-20 hover:opacity-100 saturate-0 hover:saturate-100 w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
                     height="1200"
                     src="/c3.png"
                     width="770"
@@ -68,3 +76,13 @@ export function CarouselSection() {
     </div>
   )
 }
+
+function SendIcon() {
+  return (
+<svg width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+  <path className="fill-lime-500" d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+</svg>
+  )
+}
+
+
