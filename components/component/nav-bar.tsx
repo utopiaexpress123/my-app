@@ -3,6 +3,9 @@
  * @see https://v0.dev/t/G2rJ1wK46q0
  */
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+
 
 export function NavBar() {
   return (
@@ -31,7 +34,6 @@ function PowerIcon() {
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
 <path className="stroke-stone-500 hover:stroke-stone-600" strokeLinecap="round" strokeLinejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
 </svg>
-
   )
 }
 

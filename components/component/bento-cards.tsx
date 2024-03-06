@@ -9,6 +9,20 @@ import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+
+
 
 export function BentoCards() {
   return (
@@ -51,10 +65,30 @@ export function BentoCards() {
           </div>
         </div>
 
-        <div className="p-4">
+        <div className="pl-4 pr-4 pt-4 pb-0">
           <Card className="h-full rounded-3xl shadow-2xl overflow-hidden bg-transparent">
             <div className="relative aspect-square">
-              <Button variant="ghost" className="opacity-25 font-thin p-6 text-xs absolute right-0 bottom-0 text-slate-300">ID 967890</Button>
+
+              <HoverCard>
+                <HoverCardTrigger className="absolute right-5 bottom-5">
+                  <ImageInfoIcon/>
+                </HoverCardTrigger>
+                <HoverCardContent className="rounded-2xl shadow-2xl border-0 bg-stone-900">
+                  <Image
+                  alt="Image"
+                  className="object-cover rounded-2xl"
+                  src="/kiskep.png"
+                  width= "285"
+                  height= "100"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                  />
+                </HoverCardContent>
+              </HoverCard>
+
+              <p className="opacity-25 font-thin p-6 text-xs absolute right-8 bottom-0 text-slate-300">ID 967890</p>
+              
               <Image
                 alt="Image"
                 className="object-cover"
@@ -66,7 +100,7 @@ export function BentoCards() {
                 }}
               />
               <div className="text-slate-400 absolute bottom-0  flex flex-col items-center justify-center gap-2 p-6">
-                
+               
               </div>
             </div>
           </Card>
@@ -76,6 +110,8 @@ export function BentoCards() {
             <p className="text-lg font-normal text-slate-500 text-start">
             Our AI-based service able to "learn" your unique features and reproduce them down to the smallest detail.
             </p>
+
+
               <Button className="border border-s border-slate-800 bg-gradient-to-tl from-stone-900 to-stone-700 h-13 w-100 justify-items-stretch mt-3 transition-all	tracking-wide text-sm font-normal bg-transparent hover:to-stone-700 text-slate-300 shadow-lg shadow-stone-600/60 hover:shadow-xl hover:shadow-slate-500/40 rounded-full" asChild>
                 <Link href="#">
                   <Avatar>
@@ -83,48 +119,58 @@ export function BentoCards() {
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
                   <span className="transition-all mr-3 text-slate-300 hover:text-slate-400"></span>
-                  Get your potraits <Badge variant="default" className="mr-2">Female</Badge> <Badge variant="secondary">Male</Badge>
+                  Get your potraits 
+                  <Select>
+                    <SelectTrigger className="w-[120px] ml-3">
+                      <SelectValue placeholder="Select type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="female">Female</SelectItem>
+                      <SelectItem value="male">Male</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </Link>
               </Button>
 
               <Separator className="my-3" />
               <div className="flex h-5 space-x-3 text-sm text-slate-400">
-                <div className="font-bold ">1 Credit</div>
+                <div className="font-bold w-1/4">1 Clone ID</div>
                 <Separator orientation="vertical" />
-                <div>1 Model ID</div>
+                <div className="w-1/2">+12 photos</div>
                 <Separator orientation="vertical" />
-                <div>12 photos</div>
-                <Separator orientation="vertical" />
-                <div className="text-end">21 eur</div>
+                <div className="text-end w-1/4">21 eur</div>
               </div>
               <Separator className="my-3" />
               <div className="flex h-5 space-x-3 text-sm text-slate-400">
-                <div className="font-bold ">3 Credit</div>
+                <div className="font-bold w-1/4">3 Clone ID</div>
                 <Separator orientation="vertical" />
-                <div>3 Model ID</div>
+                <div className="w-1/2">+3x12 photos</div>
                 <Separator orientation="vertical" />
-                <div>36 photos</div>
-                <Separator orientation="vertical" />
-                <div className="text-end">60 eur</div>
+                <div className="text-end w-1/4">60 eur</div>
               </div>
               <Separator className="my-3" />
               <div className="flex h-5 space-x-3 text-sm text-slate-400">
-                <div className="font-bold ">5 Credit</div>
+                <div className="font-bold w-1/4">5 Clone ID</div>
                 <Separator orientation="vertical" />
-                <div>5 Model ID</div>
+                <div className="w-1/2">+5x12 photos</div>
                 <Separator orientation="vertical" />
-                <div>60 photos</div>
-                <Separator orientation="vertical" />
-                <div className="text-end">95 eur</div>
+                <div className="text-end w-1/4">95 eur</div>
               </div>
               <Separator className="my-3" />
-
-
-
+              <p className=""></p>
         </div>
 
       </div>
     </div>
+  )
+}
+
+
+function ImageInfoIcon() {
+  return (
+<svg width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="stroke-slate-600 hover:stroke-fuchsia-400">
+  <path d="M6 3a3 3 0 0 0-3 3v1.5a.75.75 0 0 0 1.5 0V6A1.5 1.5 0 0 1 6 4.5h1.5a.75.75 0 0 0 0-1.5H6ZM16.5 3a.75.75 0 0 0 0 1.5H18A1.5 1.5 0 0 1 19.5 6v1.5a.75.75 0 0 0 1.5 0V6a3 3 0 0 0-3-3h-1.5ZM12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5ZM4.5 16.5a.75.75 0 0 0-1.5 0V18a3 3 0 0 0 3 3h1.5a.75.75 0 0 0 0-1.5H6A1.5 1.5 0 0 1 4.5 18v-1.5ZM21 16.5a.75.75 0 0 0-1.5 0V18a1.5 1.5 0 0 1-1.5 1.5h-1.5a.75.75 0 0 0 0 1.5H18a3 3 0 0 0 3-3v-1.5Z" />
+</svg>
   )
 }
 

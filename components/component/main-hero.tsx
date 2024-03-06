@@ -18,7 +18,7 @@ export function MainHero() {
         <Button className="mb-4 bg-transparent border border-slate-200 hover:border-orange-300 hover:bg-slate-100 shadow-stone-600/10 hover:shadow-orange-400/20 shadow-xl hover:shadow-xl text-stone-500 hover:text-gray-500">
           <BankCardIcon/> 
           <span className="tracking-wide font-extrabold mr-2 ml-1 text-sm">
-          Automated Income</span> Launch your AI service in 24h
+          Automated Income</span> Launch your AI service
         </Button>
           <h1 className="pb-2 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">
           Let humans do,
