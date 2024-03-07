@@ -78,7 +78,7 @@ export function Toolbar() {
         </div>
         <div className="w-4/5">
           <h1 className="text-start pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">but until then!</h1>
-          <p className="text-lg text-slate-500 leading-tight">Send an email to Lucy, our AI kind assistant &<br/>she will make it, and resend for you in minutes.</p>
+          <p className="text-lg text-slate-500 leading-tight">Send an email to Lucy, our AI kind assistant &<br/>she will make your photos, and send it to you in minutes.</p>
           <p className="text-xs text-stone-500">Buy some credits and we'll send you the details.</p>
         </div>
 
