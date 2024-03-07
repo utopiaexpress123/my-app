@@ -89,9 +89,10 @@ export function Toolbar() {
 
 
 
-function ArrowLeftIcon() {
+function ArrowLeftIcon(props) {
   return (
     <svg 
+    {...props}
     width="24"
     height="24"
     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-6 h-6">
@@ -102,9 +103,10 @@ function ArrowLeftIcon() {
 }
 
 
-function SettingsIcon() {
+function SettingsIcon(props) {
   return (
     <svg 
+    {...props}
     width="24"
     height="24"
     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
