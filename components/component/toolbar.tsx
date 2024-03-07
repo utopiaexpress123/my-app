@@ -77,7 +77,7 @@ export function Toolbar() {
           />
         </div>
         <div className="w-4/5">
-          <h1 className="text-start pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">but until then!</h1>
+          <h1 className="text-start pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">but until then!</h1>
           <p className="text-lg text-slate-500 leading-tight">Send an email to Lucy, our AI kind assistant &<br/>she will make it, and resend for you in minutes.</p>
           <p className="text-xs text-stone-500">Buy some credits and we'll send you the details.</p>
         </div>
@@ -88,39 +88,10 @@ export function Toolbar() {
 }
 
 
-function ShipWheelIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="8" />
-      <path d="M12 2v7.5" />
-      <path d="m19 5-5.23 5.23" />
-      <path d="M22 12h-7.5" />
-      <path d="m19 19-5.23-5.23" />
-      <path d="M12 14.5V22" />
-      <path d="M10.23 13.77 5 19" />
-      <path d="M9.5 12H2" />
-      <path d="M10.23 10.23 5 5" />
-      <circle cx="12" cy="12" r="2.5" />
-    </svg>
-  )
-}
 
-
-function ArrowLeftIcon(props) {
+function ArrowLeftIcon() {
   return (
     <svg 
-    {...props}
     width="24"
     height="24"
     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-6 h-6">
@@ -131,10 +102,9 @@ function ArrowLeftIcon(props) {
 }
 
 
-function SettingsIcon(props) {
+function SettingsIcon() {
   return (
     <svg 
-    {...props}
     width="24"
     height="24"
     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
