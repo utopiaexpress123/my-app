@@ -5,6 +5,17 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { ContactCard } from "./contact-card";
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 
 
@@ -15,10 +26,21 @@ export function NavBar() {
         <UtopiaIcon/>
       </Link>
       <div className="ml-auto flex items-center gap-3">
-        <span className="text-xs text-slate-400">Contact</span> 
-        <MessageIcon/>
 
-
+        <Dialog>
+          <DialogTrigger>
+          <span className="text-xs text-slate-400">Contact</span> 
+          <MessageIcon/>
+          </DialogTrigger>
+          <DialogContent className="rounded-xl px-6">
+              <DialogHeader>
+                <DialogTitle className="pb-9 text-slate-500">How can we help you?</DialogTitle>
+                  <DialogDescription>
+                        <ContactCard/>
+                  </DialogDescription>
+                </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
     </nav>
   )

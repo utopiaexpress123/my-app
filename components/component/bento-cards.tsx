@@ -5,7 +5,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { badgeVariants } from "@/components/ui/badge";
@@ -15,6 +14,16 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import { Separator } from "@/components/ui/separator";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
 
 
 export function BentoCards() {
@@ -92,62 +101,88 @@ export function BentoCards() {
                   objectFit: "cover",
                 }}
               />
-              <div className="text-slate-400 absolute bottom-0  flex flex-col items-center justify-center gap-2 p-6">
-               
+              <div className="text-slate-400 absolute bottom-8  flex flex-col items-center justify-center gap-2 p-6">
+             
               </div>
             </div>
           </Card>
         </div>
 
         <div className="p-8">
-            <p className="text-lg font-normal text-slate-500 text-start">
-            Our AI-based service able to "learn" your unique features and reproduce them down to the smallest detail.
-            </p>
-              <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
-                  <div>
-                    <span className="transition-all ml-2 mr-0 text-slate-300 hover:text-slate-400">Get your potraits</span>  
-                    <Badge variant="female" className="ml-3">
-                      <Link href="https://clonegirls.utopia.express/login">
-                        Female
-                      </Link>
-                      </Badge>
-                    <Badge variant="male" className="ml-2">
-                      <Link href="https://clone.utopia.express/login">
-                      Male
-                      </Link>
-                      </Badge>
-                  </div>
-              </Button>
-                
-              <Separator className="my-3  bg-transparent"/>
-              <div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
-                <div className="w-full"><span className="font-bold w-24">1 Clone ID</span> + 1x12 photos</div>
-                <div className="text-end w-14 text-fuchsia-400 relative">
-                  <span className="pr-5">21</span>
-                  <span className="absolute top-1  right-0"><EurIcon/></span>
-                </div>
+            <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique features and reproduce them down to the smallest details.</p>
+            <Separator className="my-3  bg-gray-300"/>
+            <div className="flex flex-row">
+              <div className="mr-4">
+                <p className="pt-3 text-sm font-bold text-slate-500 text-start">Custom Model ID</p>
+                <p className="text-xs text-slate-400">Valid for 1 mounth*</p>
+                <p className="pt-2 text-sm font-bold text-slate-500 text-start">+ 16 Portrait Photo</p>
+                <p className="text-xs text-slate-400">in 4 different style**</p>
               </div>
-              <Separator className="my-3 bg-slate-200" />
-              <div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
-              <div className="w-full"><span className="font-bold w-24">3 Clone ID</span> + 3x12 photos</div>
-                <div className="w-58"></div>
-                <div className="text-end w-14 text-fuchsia-400 relative">
-                  <span className="pr-5">59</span>
-                  <span className="absolute top-1  right-0"><EurIcon/></span>
-                </div>
+              <div className="text-right">
+                <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span className="text-6xl">€</span><EurIcon/></h1>
               </div>
-              <Separator className="my-3 bg-slate-200" />
-              <div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
-              <div className="w-full"><span className="font-bold w-24">5 Clone ID</span> + 5x12 photos</div>
-                <div className="w-58"></div>
-                <div className="text-end w-14 text-fuchsia-400 relative">
-                  <span className="pr-5">95</span>
-                  <span className="absolute top-1  right-0"><EurIcon/></span>
+            </div>
+
+            <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
+                <div>
+                  <Avatar>
+                    <AvatarImage src="https://clonegirls.utopia.express/kep.gif" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <span className="transition-all ml-2 mr-0 text-slate-300 hover:text-slate-400">Get your potraits</span>  
+                  <Dialog>
+                        <DialogTrigger>
+                          <Badge variant="secondary" className="ml-3">
+                          Create a Clone
+                          </Badge>
+                        </DialogTrigger>
+                        <DialogContent className="rounded-xl">
+                          <DialogHeader>
+                            <DialogTitle className="pb-9 text-slate-500">Please select your type</DialogTitle>
+                            <DialogDescription>
+                              <div className="flex flex-row gap-9 justify-center pb-6">
+                                <div>
+                                  <Link href="https://clonegirls.utopia.express/login">
+                                    <Image
+                                        alt="Image"
+                                        className="object-cover rounded-2xl saturate-0 hover:saturate-100"
+                                        src="/select-woman.png"
+                                        width= "122"
+                                        height= "167"
+                                        style={{
+                                          objectFit: "cover",
+                                        }}
+                                    />
+                                  </Link>
+                                </div>
+                                <div>
+                                  <Link href="https://clone.utopia.express/login">
+                                    <Image
+                                        alt="Image"
+                                        className="object-cover rounded-2xl saturate-0 hover:saturate-100"
+                                        src="/select-man.png"
+                                        width= "122"
+                                        height= "167"
+                                        style={{
+                                          objectFit: "cover",
+                                        }}
+                                    />
+                                  </Link>
+                                </div>
+                              </div>
+                            </DialogDescription>
+                          </DialogHeader>
+                        </DialogContent>
+                  </Dialog>
                 </div>
-              </div>
-              <Separator className="my-3 bg-slate-200" />
-              <p className=""></p>
+            </Button> 
+
+            <p className="text-xs pt-5 text-slate-400">
+              * With your Clone ID, you can generate any images with a low fixed price.
+              ** Based in our predefined, well engineered portrait prompts
+              </p>
         </div>
+
       </div>
     </div>
   )

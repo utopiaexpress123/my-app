@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { CarouselSection } from "@/components/component/carousel-section";
+import { Toolbar } from "@/components/component/toolbar";
+import { CustomPriceTable } from "@/components/component/custom-price-table";
 
 export default function Home() {
   return (
@@ -18,8 +20,8 @@ export default function Home() {
         <MainHero/>
       </div>
         <BentoCards/>
-        <CarouselSection/>
-        <AiService/>
+        <Toolbar/>
+        <CustomPriceTable/>
     </div>
   );
 }
