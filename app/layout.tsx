@@ -5,6 +5,7 @@ import { NavBar } from "@/components/component/nav-bar";
 import { Suspense } from "react";
 import { Footer } from "@/components/component/footer";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
