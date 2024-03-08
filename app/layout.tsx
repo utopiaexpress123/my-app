@@ -8,8 +8,8 @@ import { Footer } from "@/components/component/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Utopia Clone",
-  description: "Generate awesome portraits in minutes using AI",
+  title: "Welcome to Utopia",
+  description: "Generate awesome portraits with AI",
 };
 
 export default function RootLayout({ children }: any) {

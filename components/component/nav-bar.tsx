@@ -32,7 +32,7 @@ export function NavBar() {
           <span className="text-xs text-slate-400">Contact</span> 
           <MessageIcon/>
           </DialogTrigger>
-          <DialogContent className="rounded-xl px-6">
+          <DialogContent className="rounded-xl ">
               <DialogHeader>
                 <DialogTitle className="pb-9 text-slate-500">How can we help you?</DialogTitle>
                   <DialogDescription>
