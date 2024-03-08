@@ -12,7 +12,6 @@ export const metadata = {
   title: "Welcome to Utopia",
   description: "Generate awesome portraits with AI",
 };
-export const openGraphImage = { images: ['https://i.postimg.cc/5tfZMbmK/1.png'] };
 
 export default function RootLayout({ children }: any) {
   return (
