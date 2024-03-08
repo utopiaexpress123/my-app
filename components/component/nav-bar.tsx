@@ -16,6 +16,7 @@ import {
 import { ContactCard } from "./contact-card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 
 
@@ -41,6 +42,9 @@ export function NavBar() {
                 </DialogHeader>
           </DialogContent>
         </Dialog>
+
+        <LoginLink>Sign in</LoginLink>
+        <RegisterLink>Sign up</RegisterLink>
       </div>
     </nav>
   )
