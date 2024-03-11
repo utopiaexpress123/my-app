@@ -4,8 +4,7 @@ import "./globals.css";
 import { NavBar } from "@/components/component/nav-bar";
 import { Suspense } from "react";
 import { Footer } from "@/components/component/footer";
-
-
+import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,6 +15,20 @@ export const metadata = {
 export default function RootLayout({ children }: any) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SCVCC4H9TG"
+        />
+        <Script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
+          `}
+        </Script>
+      </head>
       <body className="overflow-x-hidden	min-h-screen bg-background bg-fixed font-sans antialiased bg-gradient-to-tl from-fuchsia-50 to-slate-300">
       
         <section>

@@ -18,7 +18,6 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
 
-
 export function NavBar() {
   return (
     <nav className="backdrop-filter backdrop-blur-sm fixed flex md:flex-row items-center h-16 w-full  shrink-0 px-4 md:px-6">
@@ -29,7 +28,6 @@ export function NavBar() {
 
         <Dialog>
           <DialogTrigger>
-          <span className="text-xs text-slate-400">Contact</span> 
           <MessageIcon/>
           </DialogTrigger>
           <DialogContent className="rounded-xl ">
@@ -41,6 +39,10 @@ export function NavBar() {
                 </DialogHeader>
           </DialogContent>
         </Dialog>
+
+
+
+
       </div>
     </nav>
   )
