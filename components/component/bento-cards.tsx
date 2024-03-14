@@ -109,19 +109,13 @@ export function BentoCards() {
         </div>
 
         <div className="p-8">
-            <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique features and reproduce them down to the smallest details.</p>
-            <Separator className="my-3  bg-gray-300"/>
+
             <div className="flex flex-row">
-              <div className="mr-4">
-                <p className="pt-3 text-sm font-bold text-slate-500 text-start">Custom Model ID</p>
-                <p className="text-xs text-slate-400">Valid for 1 mounth*</p>
-                <p className="pt-2 text-sm font-bold text-slate-500 text-start">+ 16 Portrait Photo</p>
-                <p className="text-xs text-slate-400">in 4 different style**</p>
-              </div>
               <div className="text-right">
                 <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span className="text-6xl">€</span><EurIcon/></h1>
               </div>
             </div>
+            <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique features and reproduce them down to the smallest details.</p>
 
             <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
                 <div>
@@ -177,10 +171,6 @@ export function BentoCards() {
                 </div>
             </Button> 
 
-            <p className="text-xs pt-5 text-slate-400">
-              * With your Clone ID, you can generate any images with a low fixed price.
-              ** Based in our predefined, well engineered portrait prompts
-              </p>
         </div>
 
       </div>
@@ -203,9 +193,3 @@ function EurIcon() {
   </svg>
   )
 }
-
-
-
-
-
-
