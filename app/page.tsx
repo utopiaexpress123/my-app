@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MainHero } from "@/components/component/main-hero";
-import { BentoCards } from "@/components/component/bento-cards";
+import { BentoCardsV2 } from "@/components/component/bento-cards-v2";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AiService } from "@/components/component/ai-service";
 import { Badge } from "@/components/ui/badge";
@@ -20,9 +20,10 @@ export default function Home() {
       <div className="pt-20">
         <MainHero/>
       </div>
-        <BentoCards/>
+        <BentoCardsV2/>
         <HowItWorks/>
-
+        <ServiceSection/>
+        
     </div>
   );
 }

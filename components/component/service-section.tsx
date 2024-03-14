@@ -10,15 +10,10 @@ export function ServiceSection() {
     <section className="mx-auto sm:w-full md:w-3/4 pt-6 md:mt-12 items-center text-center">
         <Button className="text-center bg-transparent border border-slate-300 hover:bg-slate-200 shadow-stone-500/20 hover:shadow-rose-400/30 shadow-lg hover:shadow-xl text-slate-400 hover:text-gray-500">
           <BankCardIcon/> 
-          <span className="tracking-wide text-orange-400 hover:text-rose-400 text-sm">
-          Automated Income</span> Launch your AI service in 24h
+          <span className="tracking-wide text-orange-400 hover:text-rose-400 text-sm"></span> Launch your AI service
         </Button>
-              <p className="text-center">
-              <span className="tracking-wide text-rose-300 hover:text-rose-400  text-sm">
-                Automated Income</span> Launch your AI service in 24h
-              </p>
               <h1 className="pb-2 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">
-                The Complete Platform for Building the Web
+                Have you got a use case?
               </h1>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
                 Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable.

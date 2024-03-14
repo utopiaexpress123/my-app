@@ -11,15 +11,15 @@ import { Badge } from "@/components/ui/badge";
 
 export function CustomPriceTable() {
   return (
-    <div className="w-full md:w-3/5 mx-auto p-8 overflow-x-auto">
+    <div className="w-full mx-auto p-8 overflow-x-auto">
       <div className="transparent">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="grid grid-rows-1 sm:grid-rows-3 gap-3">
 
           <div className="shadow-xl hover:shadow-lg flex flex-col border-b sm:border-b-0 last:border-b-0 last:sm:border-r p-4 rounded-xl bg-gray-100">
-            <div className="pt-3 text-lg font-semibold">50 Credit</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400 leading-none">For beginners, to generate 50 images</div>
+            <div className="pt-3 text-lg font-semibold">1 Credit</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400 leading-none">1x16 portrait + 1x50 freely generated image</div>
             <div className="text-stone-700 tracking-tighter pt-2 font-extrabold text-2xl md:text-3xl">
-              35<span className="text-lg">€</span>
+              21<span className="text-lg">€</span>
               <sup className="text-base"></sup>
             </div>
             <Link href="https://buy.stripe.com/dR6g2V2sVctm0pi00c" className="pt-2">
@@ -28,10 +28,10 @@ export function CustomPriceTable() {
           </div>
 
           <div className="shadow-xl hover:shadow-lg flex flex-col border-b sm:border-b-0 last:border-b-0 last:sm:border-r p-4 rounded-xl bg-lime-100 dark:bg-gray-800">
-            <div className="pt-3 text-lg font-semibold">100 Credit</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400 leading-none">For advanced users, to generate 100 images</div>
+            <div className="pt-3 text-lg font-semibold">3 Credit</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400 leading-none">3x16 portrait + 3x50 freely generated image</div>
             <div className="text-stone-700 tracking-tighter pt-2 font-extrabold text-2xl md:text-3xl">
-              63<span className="text-lg">€</span>
+              59<span className="text-lg">€</span>
               <sup className="text-base"></sup>
             </div>
             <Link href="https://buy.stripe.com/14kg2Vc3vdxq0pi5kx" className="pt-2">
@@ -40,10 +40,10 @@ export function CustomPriceTable() {
           </div>
 
           <div className="shadow-xl hover:shadow-lg flex flex-col border-b sm:border-b-0 last:border-b-0 last:sm:border-r p-4 rounded-xl bg-gray-50 dark:bg-gray-900">
-            <div className="pt-3 text-lg font-semibold">200 Credit</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400 leading-none">For addicted users, to generate 200 images</div>
+            <div className="pt-3 text-lg font-semibold">5 Credit</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400 leading-none">5x16 portrait + 5x50 freely generated image</div>
             <div className="text-stone-700 tracking-tighter pt-2 font-extrabold text-2xl md:text-3xl">
-              109<span className="text-lg">€</span>
+              95<span className="text-lg">€</span>
               <sup className="text-base"></sup>
             </div>
             <Link href="https://buy.stripe.com/dR603XebD8d6b3WeV8" className="pt-2">

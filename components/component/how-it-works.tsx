@@ -8,16 +8,11 @@ export function HowItWorks() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container grid items-center gap-8 px-4 md:px-6">
-        <div className="space-y-2 text-center">
-          <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">How It Works</div>
-          <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">
-            Streamline your workflow in four simple steps
-          </h1>
-        </div>
+
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center justify-center rounded-lg border  bg-gray-50 w-24 h-24 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
-              <CodeIcon className="w-8 h-8 text-gray-500 dark:text-gray-400" />
+              <CodeIcon/>
             </div>
             <h3 className="text-xl font-semibold text-center">Custom Model ID</h3>
             <p className="text-center text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
@@ -26,7 +21,7 @@ export function HowItWorks() {
           </div>
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center justify-center rounded-lg border border-gray-200 bg-gray-50 w-24 h-24 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
-              <BuildingIcon className="w-8 h-8 text-gray-500 dark:text-gray-400" />
+              <BuildingIcon/>
             </div>
             <h3 className="text-xl font-semibold text-center">16 Portrait Photo</h3>
             <p className="text-center text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
@@ -35,7 +30,7 @@ export function HowItWorks() {
           </div>
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center justify-center rounded-lg border border-gray-200 bg-gray-50 w-24 h-24 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
-              <CommandIcon className="w-8 h-8 text-gray-500 dark:text-gray-400" />
+              <CommandIcon/>
             </div>
             <h3 className="text-xl font-semibold text-center">50 freely generated image</h3>
             <p className="text-center text-sm text-gray-500 md:text-base/relaxed dark:text-gray-400">
@@ -53,6 +48,7 @@ export function HowItWorks() {
 function CodeIcon() {
   return (
     <svg
+    className="w-8 h-8 text-gray-500 dark:text-gray-400" 
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -72,7 +68,7 @@ function CodeIcon() {
 
 function BuildingIcon() {
   return (
-    <svg
+    <svg className="w-8 h-8 text-gray-500 dark:text-gray-400"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -112,7 +108,7 @@ function CommandIcon() {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+      <path className="w-8 h-8 text-gray-500 dark:text-gray-400" d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
     </svg>
   )
 }
