@@ -50,10 +50,9 @@ export function HowItWorks() {
 }
 
 
-function CodeIcon(props) {
+function CodeIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -71,10 +70,9 @@ function CodeIcon(props) {
 }
 
 
-function BuildingIcon(props) {
+function BuildingIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -101,10 +99,9 @@ function BuildingIcon(props) {
 }
 
 
-function CommandIcon(props) {
+function CommandIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -121,10 +118,9 @@ function CommandIcon(props) {
 }
 
 
-function MergeIcon(props) {
+function MergeIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

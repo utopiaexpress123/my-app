@@ -21,6 +21,7 @@ export default function Home() {
         <MainHero/>
       </div>
         <BentoCards/>
+        <HowItWorks/>
 
     </div>
   );
