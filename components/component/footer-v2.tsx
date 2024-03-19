@@ -76,15 +76,15 @@ export function FooterV2() {
         </nav>
         <div className="flex items-center justify-center space-x-4 md:space-x-8 pr-6">
           <Link className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-50" href="https://www.facebook.com/www.utopia.express/">
-            <FacebookIcon className="w-4 h-4" />
+            <FacebookIcon/>
             <span className="sr-only">Facebook</span>
           </Link>
           <Link className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-50" href="https://twitter.com/KontoTamas">
-            <TwitterIcon className="w-4 h-4" />
+            <TwitterIcon/>
             <span className="sr-only">Twitter</span>
           </Link>
           <Link className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-50" href="https://www.linkedin.com/in/konto-tamas-70530446/">
-            <LinkedinIcon className="w-4 h-4" />
+            <LinkedinIcon/>
             <span className="sr-only">LinkedIn</span>
           </Link>
         </div>
