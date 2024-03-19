@@ -27,25 +27,27 @@ import { Video } from "../ui/video";
 
 
 
-export function BentoCardsV2() {
+export function BentoCardsV2Video() {
   return (
     <div className="mx-auto sm:w-full md:w-5/6">
       <div className="grid grid-cols-1 md:grid-cols-3 items-center  justify-self-center">
 
-        <div className="p-8">
+        <div className="p-8 relative">
           <p className="md:pt-12 text-lg font-normal text-slate-500 sm:text-start md:text-end">
-            It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your</p>
-          <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">digital Clone</h1>
-
+            It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your</p><br />
+            <div className="h-28 relative">
+              <span className="text-slate-500 text-3xl tracking-tighter absolute right-0 top-0">photogenic</span>
+              <h1 className="absolute right-0 bottom-0 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">Clone</h1>
+            </div>
         </div>
 
-        <div className="pl-4 pr-4 pt-4 pb-0">
+        <div className="p-8">
           <Card className="h-full rounded-3xl shadow-2xl overflow-hidden bg-transparent">
             <div className="relative aspect-square">
 
               <p className="opacity-25 font-thin p-6 text-xs absolute right-8 bottom-0 text-slate-300">ID 967890</p>
               
-<Video/>
+                <Video/>
               <div className="text-slate-400 absolute bottom-8  flex flex-col items-center justify-center gap-2 p-6">
              
               </div>
@@ -55,29 +57,59 @@ export function BentoCardsV2() {
 
         <div className="p-8">
 
+          <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique features and reproduce them down to the smallest details.</p>
+
             <div className="flex flex-column gap-4">
-                <div className="text-xs py-6 text-slate-400">
-                    <p className="pt-1"><OkIcon/>CloneID</p>
-                    <p className="pt-1"><OkIcon/>16 professional portrait</p>
-                    <p className="pt-1"><OkIcon/>50 freely generated image</p>
+                <div className="py-4 h-14 w-14 text-slate-400 relative">
+                    <span className="absolute top-4 right-0 text-right text-5xl text-slate-500 bg-clip-text font-normal tracking-tighter">66</span>
+                    <br/>
+                    <span className="absolute text-md text-right top-14 text-slate-500 right-0">image</span>
                 </div>
                 <div className="text-right">
                     <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span className="text-6xl">€</span><EurIcon/></h1>
                 </div>
             </div>
-            <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique features and reproduce them down to the smallest details.</p>
+            
 
-            <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
+            <Button className="border border-slate-200 bg-transparent hover:bg-transparent h-14 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-700/10 hover:shadow-xl hover:shadow-stone-700/20 rounded-full" asChild>
                 <div>
-                  <Avatar>
-                    <AvatarImage src="https://clonegirls.utopia.express/kep.gif" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
-                  <span className="transition-all ml-2 mr-0 text-slate-300 hover:text-slate-400">Get your potraits</span>  
+
+                    <Image
+                        alt="Image"
+                        className="object-cover rounded-full mr-2 shadow-md"
+                        src="/01.png"
+                        width= "34"
+                        height= "34"
+                        style={{
+                        objectFit: "cover",
+                       }}
+                    />
+                    <Image
+                        alt="Image"
+                        className="object-cover rounded-full mr-2 shadow-md"
+                        src="/02.png"
+                        width= "34"
+                        height= "34"
+                        style={{
+                        objectFit: "cover",
+                       }}
+                    />
+                    <Image
+                        alt="Image"
+                        className="object-cover rounded-full mr-2 shadow-md"
+                        src="/04.png"
+                        width= "34"
+                        height= "34"
+                        style={{
+                        objectFit: "cover",
+                       }}
+                    />
+
+
                   <Dialog>
                         <DialogTrigger>
-                          <Badge variant="secondary" className="ml-3">
-                          Create a Clone
+                          <Badge variant="secondary" className="pl-4 pr-4 pt-2 pb-2 pulse">
+                          Create you Clone
                           </Badge>
                         </DialogTrigger>
                         <DialogContent className="rounded-xl">
@@ -89,7 +121,7 @@ export function BentoCardsV2() {
                                   <Link href="https://clonegirls.utopia.express/login">
                                     <Image
                                         alt="Image"
-                                        className="object-cover rounded-2xl saturate-0 hover:saturate-100"
+                                        className="object-cover rounded-xl shadow-xl shadow-slate-600/50 saturate-0 hover:saturate-100"
                                         src="/select-woman.png"
                                         width= "122"
                                         height= "167"
@@ -103,7 +135,7 @@ export function BentoCardsV2() {
                                   <Link href="https://clone.utopia.express/login">
                                     <Image
                                         alt="Image"
-                                        className="object-cover rounded-2xl saturate-0 hover:saturate-100"
+                                        className="object-cover rounded-xl shadow-xl shadow-slate-600/50 saturate-0 hover:saturate-100"
                                         src="/select-man.png"
                                         width= "122"
                                         height= "167"
@@ -124,6 +156,28 @@ export function BentoCardsV2() {
         </div>
 
       </div>
+
+      <div className="mx-auto md:w-1/2 pl-8 pr-8">
+        <Separator orientation="vertical" className="h-14 bg-slate-300 mx-auto"/>
+        <div className="p-1 flex flex-row border border-slate-300 shadow-2xl rounded-full">
+          <div className="w-1/6 pt-2 pb-2 pl-6 pr-0">
+            <p className="text-right text-3xl font-normal text-slate-400">-20%</p>
+          </div>
+          <div className="w-3/6 pt-2 pb-2 pr-6">
+            <p className="text-right text-sm font-normal text-slate-400">Use this promo code & get<br/>20% off of the first training</p>
+          </div>
+          <div className="w-2/6 relative pt-2 pb-2 pl-3 flex flex-row rounded-full shadow-lg shadow-fuchsia-600/30 hover:shadow-fuchsia-500/30 border-0 bg-gradient-to-br from-stone-600 to-stone-900 hover:bg-gradient-to-br hover:from-fuchsia-600 hover:to-stone-900 text-slate-200">
+            <div className="text-center w-3/4 tracking-widest text-2xl font-normal text-slate-400">
+              UE2024 
+            </div>
+            <div className="w-1/4">   
+              <span className="absolute top-4 right-3 opacity-40 hover:opacity-100"><CopyIcon/></span>
+            </div>
+          </div>
+        </div>
+        <Separator orientation="vertical" className="h-28 bg-slate-300 mx-auto"/>
+      </div>
+
     </div>
   )
 }
@@ -141,3 +195,15 @@ function EurIcon() {
   </svg>
   )
 }
+
+
+function CopyIcon() {
+  return (
+<svg className="float-right w-5 h-5 stroke-slate-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z" />
+</svg>
+
+  )
+}
+
+

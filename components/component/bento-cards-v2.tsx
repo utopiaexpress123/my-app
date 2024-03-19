@@ -35,8 +35,8 @@ export function BentoCardsV2() {
 
         <div className="p-8">
           <p className="md:pt-12 text-lg font-normal text-slate-500 sm:text-start md:text-end">
-            It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your digital</p>
-          <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent leading-5">Clone</h1>
+            It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your better-looking</p>
+          <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent leading-5">digital Clone</h1>
 
         </div>
 

@@ -3,8 +3,19 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/components/component/nav-bar";
 import { Suspense } from "react";
-import { Footer } from "@/components/component/footer";
+import { FooterV2 } from "@/components/component/footer-v2";
 import Script from "next/script";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -28,6 +39,7 @@ export default function RootLayout({ children }: any) {
               gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
           `}
         </Script>
+       
       </head>
       <body className="overflow-x-hidden	min-h-screen bg-background bg-fixed font-sans antialiased bg-gradient-to-tl from-fuchsia-50 to-slate-300">
       
@@ -38,7 +50,7 @@ export default function RootLayout({ children }: any) {
         </section>
         <main>
         {children}
-        <Footer/>
+        <FooterV2/>
         </main>
       </body>
     </html>

@@ -15,17 +15,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 export function MainHeroV2() {
   return (
       <div className="text-center p-8 text-gray-800 dark:text-gray-100">
-          <p className="tracking-wide	mt-3 text-2xl text-stone-500 dark:text-gray-100 transparent">This is a new era when</p>
+
           <h1 className="pb-2 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">
-          reality and imagination gets mixed up
+         reality and imagination<br/>gets mixed up
           </h1>
         <p className="tracking-wide	mt-3 text-2xl text-stone-500 dark:text-gray-100 transparent">
-         But we are not just flesh and blood
-          <br />
-          and this reality is fucked up
-        </p>
-        <p>
-         So let's build a new one. But not for them. For Us.
+       </p>
+        <p className="tracking-wide	mt-3 text-2xl text-stone-500 dark:text-gray-100 transparent">
+         Let's build a new reality. Not for them. For Us.
         </p>
         <div className="mt-2 mb-5">
           <Button className="h-13 m-4 bg-transparent border border-slate-100 hover:border-fuchsia-200 hover:bg-slate-100 shadow-fuchsia-600/10 hover:shadow-fuchsia-400/20 shadow-xl hover:shadow-xl text-stone-500 hover:text-gray-500" asChild>
@@ -36,8 +33,20 @@ export function MainHeroV2() {
               </Avatar>
               <span className="tracking-wide text-slate-400 hover:text-rose-400 mr-2 ml-1 text-sm">
               </span>
-              <span className="transition-all mr-3 text-slate-500 hover:text-slate-400">Create your Digital Counterpart</span>
+              <span className="transition-all mr-3 text-slate-500 hover:text-slate-400">Create your Digital Clone</span>
               <Badge variant="default">NEW</Badge>
+            </Link>
+          </Button>
+
+          <Button className="h-13 m-4 bg-transparent border border-slate-100 hover:border-fuchsia-200 hover:bg-slate-100 shadow-fuchsia-600/10 hover:shadow-fuchsia-400/20 shadow-xl hover:shadow-xl text-stone-500 hover:text-gray-500" asChild>
+            <Link href="#">
+              <Avatar>
+                <AvatarImage src="https://clonegirls.utopia.express/kep.gif" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <span className="tracking-wide text-slate-400 hover:text-rose-400 mr-2 ml-1 text-sm">
+              </span>
+              <span className="transition-all mr-3 text-slate-500 hover:text-slate-400">Launch your Automated AI Service</span>
             </Link>
           </Button>
 

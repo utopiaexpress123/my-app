@@ -9,7 +9,7 @@ import Link from "next/link";
 export function ContactCard() {
   return (
     <div className="flex flex-row gap-9 justify-center pb-6">
-    <Card className="w-full max-w-sm mx-auto">
+    <Card className="w-full max-w-sm mx-auto rounded-2xl shadow-xl shadow-stone-950/90">
       <div className="p-4 flex items-center gap-4">
         <img
           alt="Avatar"
@@ -44,7 +44,7 @@ export function ContactCard() {
       </CardContent>
     </Card>
 
-    <Card className="w-full max-w-sm mx-auto">
+    <Card className="w-full max-w-sm mx-auto rounded-2xl shadow-xl shadow-stone-950/90">
       <div className="p-4 flex items-center gap-4">
         <img
           alt="Avatar"
