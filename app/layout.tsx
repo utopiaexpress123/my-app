@@ -41,6 +41,10 @@ export default function RootLayout({ children }: any) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+
+
+<title>Utopia Express</title>
+
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-SCVCC4H9TG"
