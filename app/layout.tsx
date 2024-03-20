@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'Utopia Express',
     images: [
       {
-        url: '/opengraph-image.jpg',
+        url: 'https://i.postimg.cc/8z6j1qBP/opengraph-image.jpg',
         width: 480,
         height: 507,
       },
