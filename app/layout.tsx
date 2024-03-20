@@ -5,6 +5,7 @@ import { NavBar } from "@/components/component/nav-bar";
 import { Suspense } from "react";
 import { FooterV2 } from "@/components/component/footer-v2";
 import Script from "next/script";
+import { Metadata } from 'next'; 
 import {
   Menubar,
   MenubarContent,
@@ -18,9 +19,22 @@ import {
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Welcome to Utopia",
-  description: "Generate awesome portraits with AI",
+export const metadata: Metadata = {
+  openGraph: {
+    title: 'Utopia Express',
+    description: 'Bring to life your AI Clone',
+    url: 'https://utopia.express',
+    siteName: 'Utopia Express',
+    images: [
+      {
+        url: '/opengraph-image.jpg',
+        width: 480,
+        height: 507,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }: any) {
