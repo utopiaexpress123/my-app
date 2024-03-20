@@ -14,7 +14,6 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import { Separator } from "@/components/ui/separator";
 import {
   Dialog,
   DialogContent,
@@ -33,10 +32,9 @@ export function BentoCardsV2Video() {
       <div className="grid grid-cols-1 md:grid-cols-3 items-center  justify-self-center">
 
         <div className="p-8 relative">
-          <p className="md:pt-12 text-lg font-normal text-slate-500 sm:text-start md:text-end">
-            It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your</p><br />
-            <div className="h-28 relative">
-              <span className="text-slate-500 text-3xl tracking-tighter absolute right-0 top-0">photogenic</span>
+
+            <div className="h-36 relative">
+              <span className="text-right text-slate-500 text-3xl tracking-tighter absolute right-0 top-0">Meet your<br />photogenic</span>
               <h1 className="absolute right-0 bottom-0 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">Clone</h1>
             </div>
         </div>
@@ -57,13 +55,11 @@ export function BentoCardsV2Video() {
 
         <div className="p-8">
 
-          <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique features and reproduce them down to the smallest details.</p>
+          <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique characteristics and create fully realistic images of you.</p>
 
-            <div className="flex flex-column gap-4">
-                <div className="py-4 h-14 w-14 text-slate-400 relative">
-                    <span className="absolute top-4 right-0 text-right text-5xl text-slate-500 bg-clip-text font-normal tracking-tighter">66</span>
-                    <br/>
-                    <span className="absolute text-md text-right top-14 text-slate-500 right-0">image</span>
+            <div className="flex flex-column gap-1">
+                <div className="py-4 h-14 w-12 text-slate-400 relative">
+                    <span className="absolute text-2xl italic text-right top-5 text-slate-500 right-0">from</span>
                 </div>
                 <div className="text-right">
                     <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span className="text-6xl">€</span><EurIcon/></h1>
@@ -157,26 +153,7 @@ export function BentoCardsV2Video() {
 
       </div>
 
-      <div className="mx-auto md:w-1/2 pl-8 pr-8">
-        <Separator orientation="vertical" className="h-14 bg-slate-300 mx-auto"/>
-        <div className="p-1 flex flex-row border border-slate-300 shadow-2xl rounded-full">
-          <div className="w-1/6 pt-2 pb-2 pl-6 pr-0">
-            <p className="text-right text-3xl font-normal text-slate-400">-20%</p>
-          </div>
-          <div className="w-3/6 pt-2 pb-2 pr-6">
-            <p className="text-right text-sm font-normal text-slate-400">Use this promo code & get<br/>20% off of the first training</p>
-          </div>
-          <div className="w-2/6 relative pt-2 pb-2 pl-3 flex flex-row rounded-full shadow-lg shadow-fuchsia-600/30 hover:shadow-fuchsia-500/30 border-0 bg-gradient-to-br from-stone-600 to-stone-900 hover:bg-gradient-to-br hover:from-fuchsia-600 hover:to-stone-900 text-slate-200">
-            <div className="text-center w-3/4 tracking-widest text-2xl font-normal text-slate-400">
-              UE2024 
-            </div>
-            <div className="w-1/4">   
-              <span className="absolute top-4 right-3 opacity-40 hover:opacity-100"><CopyIcon/></span>
-            </div>
-          </div>
-        </div>
-        <Separator orientation="vertical" className="h-28 bg-slate-300 mx-auto"/>
-      </div>
+
 
     </div>
   )
@@ -205,5 +182,12 @@ function CopyIcon() {
 
   )
 }
+
+
+
+
+
+
+
 
 

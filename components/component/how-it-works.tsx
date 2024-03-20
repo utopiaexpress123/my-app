@@ -15,7 +15,7 @@ export function HowItWorks() {
 
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
           <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-center rounded-full border bg-gray-50 hover:bg-fuchsia-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+            <div className="transition-colors	flex items-center justify-center rounded-full border bg-gray-100 hover:bg-amber-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
@@ -33,7 +33,7 @@ export function HowItWorks() {
             </p> 
           </div>
           <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-center rounded-full border bg-gray-50 hover:bg-fuchsia-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+            <div className="transition-colors flex items-center justify-center rounded-full border bg-gray-100 hover:bg-fuchsia-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
@@ -51,7 +51,7 @@ export function HowItWorks() {
             </p>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-center rounded-full border bg-gray-50 hover:bg-fuchsia-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+            <div className="transition-colors flex items-center justify-center rounded-full border bg-gray-100 hover:bg-emerald-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
