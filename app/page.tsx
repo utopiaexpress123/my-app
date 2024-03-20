@@ -16,8 +16,8 @@ export default function Home() {
       </div>
         <BentoCardsV2Video/>  
         <ThreeSteps/>
-        <Coupon/> 
         <HowItWorks/> 
+        <Coupon/> 
         <PriceTable/>
         <Toolbar/>      
     </div>
