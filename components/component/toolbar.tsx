@@ -5,53 +5,24 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
-
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export function Toolbar() {
   return (
     <div className="mx-auto sm:w-full md:w-5/6">
 
-      <div className="flex flex-row h-28">
-        <div className="w-1/2 border-r border-slate-400"></div>
-        <div className="w-1/2"></div>
-      </div>
-
-      <h1 className="pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">Free your imagination</h1>
-      <div className="w-100 md:w-3/5 mx-auto">
-        <p className="text-center text-lg text-slate-500">The model gets better and better as you generate more and more images with the same subject. With your custom fine tuned model, you can generate any images featured of you, or your subject.<br/><span className="text-fuchsia-400">Coming in the next weeks! </span></p>
-        <p className="text-center"></p>
-      </div>
-
-
-      <div className="flex flex-row h-8 pt-2">
-        <div className="w-1/2 border-r border-slate-400"></div>
-        <div className="w-1/2"></div>
-      </div>
-
-      <div className="mx-auto w-5/6 md:w-1/2 flex items-center p-2 bg-gradient-to-t from-stone-800 to-stone-700  mt-3 transition-all tracking-wide font-normal text-slate-300 shadow-xl shadow-fuchsia-400/50 hover:shadow-fuchsia-400/50 hover:shadow-lg rounded-full">
-        <div className="flex items-center justify-center w-10 h-10 rounded-full">
-
-        <Avatar className="ml-2">
-          <AvatarImage src="/girl-icon.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-
-        </div>
-        <span className="mx-4 mr-10">photo of @me as caribbean pearl fisherman</span>
-        <Button className="bg-transparent hover:bg-[#444] text-slate-400 hover:text-slate-200 p-2 rounded-full">
-          <ArrowLeftIcon className="text-slate-400" />
-        </Button>
-        <Button className="bg-transparent hover:bg-[#444] text-slate-400 hover:text-slate-200 p-2 rounded-full">
-          <SettingsIcon className="text-slate-400"/>
-        </Button>
-      </div>
 
       <div className="flex flex-row h-20 mt-4">
-        <div className="w-1/2 border-r border-slate-400"></div>
-        <div className="w-1/2"></div>
-      </div>
-      <div className="flex flex-row h-20 mt-0">
-        <div className="w-1/2 border-r border-slate-400"></div>
+        <div className="w-1/2 border-r border-slate-300"></div>
         <div className="w-1/2"></div>
       </div>
 
@@ -77,9 +48,90 @@ export function Toolbar() {
           />
         </div>
         <div className="w-4/5">
-          <h1 className="text-start pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">but until then!</h1>
-          <p className="text-lg text-slate-500 leading-tight">Send an email to Lucy, our AI kind assistant &<br/>she will make your photos, and send it to you in minutes.</p>
-          <p className="text-xs text-stone-500">Buy some credits and we'll send you the details.</p>
+          <h1 className="text-start pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-4xl md:text-6xl md:leading-[4rem]">Free your imagination!</h1>
+          <p className="text-lg text-slate-500 leading-tight">
+          Your model gets better and better as you generate more and more images. Send an email to Lucy, our AI kind assistant & she will make your photos, and send it to you in minutes.
+          </p>
+            <Button className="border border-slate-200 bg-transparent hover:bg-transparent h-14 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-700/10 hover:shadow-xl hover:shadow-stone-700/20 rounded-full" asChild>
+                <div>
+                    <Image
+                        alt="Image"
+                        className="object-cover rounded-full mr-2 shadow-md"
+                        src="/01.png"
+                        width= "34"
+                        height= "34"
+                        style={{
+                        objectFit: "cover",
+                       }}
+                    />
+                    <Image
+                        alt="Image"
+                        className="object-cover rounded-full mr-2 shadow-md"
+                        src="/02.png"
+                        width= "34"
+                        height= "34"
+                        style={{
+                        objectFit: "cover",
+                       }}
+                    />
+                    <Image
+                        alt="Image"
+                        className="object-cover rounded-full mr-2 shadow-md"
+                        src="/04.png"
+                        width= "34"
+                        height= "34"
+                        style={{
+                        objectFit: "cover",
+                       }}
+                    />
+
+
+                  <Dialog>
+                        <DialogTrigger>
+                          <Badge variant="secondary" className="text-md pl-4 pr-4 pt-1 pb-2 pulse">
+                          Create a Clone
+                          </Badge>
+                        </DialogTrigger>
+                        <DialogContent className="rounded-xl">
+                          <DialogHeader>
+                            <DialogTitle className="pb-9 text-slate-500">Please select your type</DialogTitle>
+                            <DialogDescription>
+                              <div className="flex flex-row gap-9 justify-center pb-6">
+                                <div>
+                                  <Link href="https://clonegirls.utopia.express/login">
+                                    <Image
+                                        alt="Image"
+                                        className="object-cover rounded-xl shadow-xl shadow-slate-600/50 saturate-0 hover:saturate-100"
+                                        src="/select-woman.png"
+                                        width= "122"
+                                        height= "167"
+                                        style={{
+                                          objectFit: "cover",
+                                        }}
+                                    />
+                                  </Link>
+                                </div>
+                                <div>
+                                  <Link href="https://clone.utopia.express/login">
+                                    <Image
+                                        alt="Image"
+                                        className="object-cover rounded-xl shadow-xl shadow-slate-600/50 saturate-0 hover:saturate-100"
+                                        src="/select-man.png"
+                                        width= "122"
+                                        height= "167"
+                                        style={{
+                                          objectFit: "cover",
+                                        }}
+                                    />
+                                  </Link>
+                                </div>
+                              </div>
+                            </DialogDescription>
+                          </DialogHeader>
+                        </DialogContent>
+                  </Dialog>
+                </div>
+            </Button> 
         </div>
 
       </div>

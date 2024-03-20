@@ -3,6 +3,8 @@ import { BentoCardsV2Video } from "@/components/component/bento-cards-v2-video";
 import { HowItWorks } from "@/components/component/how-it-works";
 import { Coupon } from "@/components/component/coupon";
 import { ThreeSteps } from "@/components/component/three-steps";
+import { Toolbar } from "@/components/component/toolbar";
+import { PriceTable } from "@/components/component/price-table";
 
 
 export default function Home() {
@@ -15,7 +17,9 @@ export default function Home() {
         <BentoCardsV2Video/>  
         <ThreeSteps/>
         <Coupon/> 
-        <HowItWorks/>       
+        <HowItWorks/> 
+        <PriceTable/>
+        <Toolbar/>      
     </div>
 
     

@@ -1,38 +1,68 @@
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function PriceTable() {
     return (
 
-<div>
-<Separator className="my-3  bg-transparent"/>
-<div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
-  <div className="w-full"><span className="font-bold w-24">1 Clone ID</span> + 1x12 photos</div>
-  <div className="text-end w-14 text-fuchsia-400 relative">
-    <span className="pr-5">21</span>
-    <span className="absolute top-1  right-0"><EurIcon/></span>
-  </div>
-</div>
+<div className="mx-auto md:w-2/3 pl-8 pr-8 pt-6">
 
-<Separator className="my-3 bg-slate-200" />
-<div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
-<div className="w-full"><span className="font-bold w-24">3 Clone ID</span> + 3x12 photos</div>
-  <div className="w-58"></div>
-  <div className="text-end w-14 text-fuchsia-400 relative">
-    <span className="pr-5">59</span>
-    <span className="absolute top-1  right-0"><EurIcon/></span>
+  <div className="flex flex-row h-14">
+        <div className="w-1/2 border-r border-slate-300"></div>
+        <div className="w-1/2"></div>
   </div>
-</div>
-<Separator className="my-3 bg-slate-200" />
-<div className="pl-2 pr-2 flex h-5 space-x-3 text-sm text-slate-400">
-<div className="w-full"><span className="font-bold w-24">5 Clone ID</span> + 5x12 photos</div>
-  <div className="w-58"></div>
-  <div className="text-end w-14 text-fuchsia-400 relative">
-    <span className="pr-5">95</span>
-    <span className="absolute top-1  right-0"><EurIcon/></span>
+
+  <Separator className="my-3 bg-slate-300"/>
+  <div className="flex h-6 items-center space-x-4 md:space-x-6 text-sm">
+    <div>1 training process</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="w-32">16 portrait photos</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="w-44">50 Freely generated image</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="">
+    21€
+      <Link href="https://checkout.stripe.com/c/pay/cs_live_a1pHwMbdaiAKqG9XKVxABbiT2VhDSPBusweQW6ZTQZsMpSTy07ynhrzkhj#fidkdWxOYHwnPyd1blppbHNgWjA0SGhjd2pDSTFOaU19fXBXZzR1MVJfTkZVRm5faTA8Y310fTJhR3xAfWx8MnRHamN8TkJqamtfbWhMaHByb0dGUXFyX3FDYmtsPWNIbm1KUGxSc1NnYEp1NTVtX3EwbTBuZCd4JSUl">
+        <Button variant="outline" className="ml-2 h-8 shadow-sm">Buy now</Button>
+      </Link>
+    </div>
   </div>
-</div>
-<Separator className="my-3 bg-slate-200" />
-<p className=""></p>
+
+  <Separator className="my-3 bg-slate-300"/>
+  <div className="flex h-6 items-center space-x-4 md:space-x-6 text-sm">
+    <div>3 training process</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="w-32">3x16 portrait photos</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="w-38">3x50 Freely generated image</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div>
+    59€
+      <Link href="https://checkout.stripe.com/c/pay/cs_live_a1pHwMbdaiAKqG9XKVxABbiT2VhDSPBusweQW6ZTQZsMpSTy07ynhrzkhj#fidkdWxOYHwnPyd1blppbHNgWjA0SGhjd2pDSTFOaU19fXBXZzR1MVJfTkZVRm5faTA8Y310fTJhR3xAfWx8MnRHamN8TkJqamtfbWhMaHByb0dGUXFyX3FDYmtsPWNIbm1KUGxSc1NnYEp1NTVtX3EwbTBuZCd4JSUl">
+        <Button variant="outline" className="ml-2 h-8 shadow-sm">Buy now</Button>
+      </Link>
+    </div>
+  </div>
+
+  <Separator className="my-3 bg-slate-300"/>
+  <div className="flex h-6 items-center space-x-4 md:space-x-6 text-sm">
+    <div>5 training process</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="w-32">5x16 portrait photos</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="w-38">5x50 Freely generated image</div>
+    <Separator orientation="vertical" className="bg-slate-300"/>
+    <div className="">
+    95€
+      <Link href="https://checkout.stripe.com/c/pay/cs_live_a1pHwMbdaiAKqG9XKVxABbiT2VhDSPBusweQW6ZTQZsMpSTy07ynhrzkhj#fidkdWxOYHwnPyd1blppbHNgWjA0SGhjd2pDSTFOaU19fXBXZzR1MVJfTkZVRm5faTA8Y310fTJhR3xAfWx8MnRHamN8TkJqamtfbWhMaHByb0dGUXFyX3FDYmtsPWNIbm1KUGxSc1NnYEp1NTVtX3EwbTBuZCd4JSUl">
+        <Button variant="outline" className="ml-2 h-8 shadow-sm">Buy now</Button>
+      </Link>
+    </div>
+  </div>
+  <Separator className="my-3 bg-slate-300"/>
+
+
+
 </div>
   )
 }

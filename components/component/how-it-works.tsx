@@ -7,9 +7,7 @@ import Image from "next/image";
 
 export function HowItWorks() {
   return (
-    <div className="mx-auto md:w-5/6">
-
-      <Separator orientation="vertical" className="h-14 bg-slate-300 mx-auto"/>
+    <div className="mx-auto md:w-5/6 mt-20">
 
       <div className="container grid items-center gap-8 px-4 md:px-6">
 

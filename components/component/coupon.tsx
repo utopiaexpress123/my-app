@@ -28,7 +28,7 @@ export function Coupon() {
         </div>
       </div>
 
-      <Separator orientation="vertical" className="h-32 bg-slate-300 mx-auto"/>
+      <Separator orientation="vertical" className="h-16 bg-slate-300 mx-auto"/>
 
     </div>
   )
