@@ -50,7 +50,7 @@ export function Toolbar() {
         <div className="w-4/5">
           <h1 className="text-start pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-4xl md:text-6xl md:leading-[4rem]">Free your imagination!</h1>
           <p className="text-lg text-slate-500 leading-tight">
-          Your model gets better and better as you generate more and more images. Send an email to Lucy, our AI kind assistant & she will make your photos, and send it to you in minutes.
+          Your model gets better and better as you generate more and more images. Send an email to Lucy, our kind AI assistant & she will make your photos, and send it to you in minutes.
           </p>
             <Button className="border border-slate-200 bg-transparent hover:bg-transparent h-14 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-700/10 hover:shadow-xl hover:shadow-stone-700/20 rounded-full" asChild>
                 <div>
