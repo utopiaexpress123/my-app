@@ -35,7 +35,7 @@ export function BentoCardsV2Video() {
 
             <div className="h-36 relative">
               <span className="text-right text-slate-500 text-3xl tracking-tighter absolute right-0 top-0">Meet your<br />photogenic</span>
-              <h1 className="absolute right-0 bottom-0 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">Clone</h1>
+              <h1 className="absolute right-0 bottom-0 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent pr-1">Clone</h1>
             </div>
         </div>
 
@@ -62,7 +62,7 @@ export function BentoCardsV2Video() {
                     <span className="absolute text-2xl italic text-right top-5 text-slate-500 right-0">from</span>
                 </div>
                 <div className="text-right">
-                    <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span className="text-6xl">€</span><EurIcon/></h1>
+                    <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span className="text-6xl pr-1">€</span><EurIcon/></h1>
                 </div>
             </div>
             
