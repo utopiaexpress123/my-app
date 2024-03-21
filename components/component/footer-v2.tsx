@@ -15,27 +15,39 @@ import { ContactCard } from "./contact-card";
 
 export function FooterV2() {
   return (
-    <footer className="w-full pb-3 pt-4 bg-gradient-to-bl from-stone-900 to-stone-700 text-stone-500">
+    <div className="m-4 md:m-10 shadow-2xl shadow-slate-600/40 rounded-2xl pb-3 pt-4 bg-gradient-to-tr from-fuchsia-50 to-slate-50 text-stone-500">
       <div className="flex flex-col gap-2 text-center md:flex-row md:items-center md:justify-between md:gap-4 lg:gap-0 ">
         <div className="flex items-center justify-center ">
           <span className="pl-10 pr-4"><UtopiaIcon/></span>
           <p className="text-xs font-normal text-stone-600 dark:text-stone-200">2024. Utopia Express</p>
+          <div className="scale-75">
+            <Link href="https://www.producthunt.com/posts/utopia-express?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-utopia&#0045;express" target="_blank">
+              <img 
+              className="mx-auto pt-8 pb-8 opacity-50 hover:opacity-100"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=445868&theme=neutral" 
+              alt="Utopia&#0032;Express - Generate&#0032;any&#0032;image&#0032;of&#0032;yourself | Product Hunt" 
+              width="250" 
+              height="54" 
+              />
+              </Link>
+          </div>
         </div>
+
         <nav className="flex items-center justify-center gap-4 md:gap-6 font-normal text-stone-500 ">
           <Link
-            className="text-sm hover:text-stone-400"
+            className="text-sm hover:text-stone-600"
             href="https://clone.utopia.express/login"
           >
             Clone for boys
           </Link>
           <Link
-            className="text-sm hover:text-stone-400"
+            className="text-sm hover:text-stone-600"
             href="https://clonegirls.utopia.express/login"
           >
             Clone for girls
           </Link>
           <Link
-            className="text-sm hover:text-stone-400"
+            className="text-sm hover:text-stone-600"
             href="#"
           >
             Services
@@ -56,6 +68,7 @@ export function FooterV2() {
         </Dialog>
 
         </nav>
+
         <div className="flex items-center justify-center space-x-4 md:space-x-8 pr-6">
           <Link className="fill-stone-500 hover:text-gray-900 dark:hover:text-gray-50" href="https://www.facebook.com/www.utopia.express/">
             <FacebookIcon/>
@@ -71,7 +84,8 @@ export function FooterV2() {
           </Link>
         </div>
       </div>
-    </footer>
+     
+    </div>
   )
 }
 

@@ -31,7 +31,7 @@ export function BentoCardsV2Video() {
     <div className="mx-auto sm:w-full md:w-5/6">
       <div className="grid grid-cols-1 md:grid-cols-3 items-center  justify-self-center">
 
-        <div className="p-8 relative">
+        <div className="p-4 relative">
 
             <div className="h-36 relative">
               <span className="text-right text-slate-500 text-3xl tracking-tighter absolute right-0 top-0">Meet your<br />photogenic</span>
@@ -39,11 +39,11 @@ export function BentoCardsV2Video() {
             </div>
         </div>
 
-        <div className="p-8">
-          <Card className="h-full rounded-3xl shadow-2xl overflow-hidden bg-transparent">
+        <div className="p-4">
+          <Card className="m-8 h-full rounded-3xl border border-slate-300 shadow-xl shadow-slate-900/30 overflow-hidden bg-transparent">
             <div className="relative aspect-square">
 
-              <p className="opacity-25 font-thin p-6 text-xs absolute right-8 bottom-0 text-slate-300">ID 967890</p>
+              <p className="opacity-25 font-thin p-6 text-xs absolute right-2 bottom-0 text-slate-300">ID 967890</p>
               
                 <Video/>
               <div className="text-slate-400 absolute bottom-8  flex flex-col items-center justify-center gap-2 p-6">
@@ -53,7 +53,7 @@ export function BentoCardsV2Video() {
           </Card>
         </div>
 
-        <div className="p-8">
+        <div className="p-4">
 
           <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique characteristics and create fully realistic images of you.</p>
 
