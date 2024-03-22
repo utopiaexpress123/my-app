@@ -32,10 +32,9 @@ export function BentoCardsV2Video() {
       <div className="grid grid-cols-1 md:grid-cols-3 items-center  justify-self-center">
 
         <div className="p-4 relative">
-
             <div className="h-36 relative">
-              <span className="text-right text-slate-500 text-3xl tracking-tighter absolute right-0 top-0">Meet your<br />photogenic</span>
-              <h1 className="absolute right-0 bottom-0 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent pr-1">Clone</h1>
+              <span className="md:text-right text-slate-500 text-3xl tracking-tighter md:absolute md:right-0 md:top-0">Meet your<br />photogenic</span>
+              <h1 className="md:absolute md:right-0 md:bottom-0 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-7xl md:text-8xl font-extrabold tracking-tighter text-transparent pr-1">Clone</h1>
             </div>
         </div>
 
@@ -67,7 +66,7 @@ export function BentoCardsV2Video() {
             </div>
             
 
-            <Button className="border border-slate-200 bg-transparent hover:bg-transparent h-14 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-700/10 hover:shadow-xl hover:shadow-stone-700/20 rounded-full" asChild>
+            <Button className="border border-slate-200 bg-transparent hover:bg-transparent h-14 w-full justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-700/10 hover:shadow-xl hover:shadow-stone-700/20 rounded-full" asChild>
                 <div>
 
                     <Image

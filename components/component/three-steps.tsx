@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 export function ThreeSteps() {
     return (
 
-    <div className="mx-auto md:w-4/5 pl-8 pr-8">
+    <div className="mx-auto md:w-4/5 pl-8 pr-8 relative">
         <Separator orientation="vertical" className="h-20 mb-6 bg-slate-300 mx-auto"/>    
         <div className="relative min-h-64">
 
