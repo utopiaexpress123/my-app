@@ -25,7 +25,7 @@ export function ContactCard() {
         <div className="grid gap-1.5">
           <div>
             <h3 className="text-lg font-bold">Tamas Konto</h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Developer</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Fonder, CTO</p>
           </div>
         </div>
       </div>

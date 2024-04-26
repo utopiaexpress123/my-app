@@ -15,10 +15,10 @@ import { ContactCard } from "./contact-card";
 
 export function FooterV2() {
   return (
-    <div className="m-4 md:m-10 shadow-2xl shadow-slate-600/40 rounded-2xl pb-3 pt-4 bg-gradient-to-tr from-fuchsia-50 to-slate-50 text-stone-500">
+    <div className="m-4 md:m-8  text-slate-500">
       <div className="flex flex-col gap-2 text-center md:flex-row md:items-center md:justify-between md:gap-4 lg:gap-0 ">
         <div className="flex items-center justify-center ">
-          <span className="pl-10 pr-4"><UtopiaIcon/></span>
+          
           <p className="text-xs font-normal text-stone-600 dark:text-stone-200">2024. Utopia Express</p>
           <div className="scale-75">
             <Link href="https://www.producthunt.com/posts/utopia-express?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-utopia&#0045;express" target="_blank">

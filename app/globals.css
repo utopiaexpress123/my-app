@@ -75,6 +75,23 @@
   }
 }
 
+.vertical-animated-line { 
+  width:1px;
+  height:90px;
+  background: transparent;
+  background-image: linear-gradient(0deg, #242424 10%,  rgba(51, 51, 51, 0.4) 1%, #E4E4F0 99%);
+  animation: verticalGradient 2s linear infinite 0s ; 
+}
+@keyframes verticalGradient { 
+  0% { 
+   top:0%;
+    background-image: linear-gradient(0deg, #242424 10%,  rgba(51, 51, 51, 0.4) 1%, #E4E4F0 99%);
+  } 
+  100% { 
+    top:90%;
+    background-image: linear-gradient(0deg, #242424 10%,  rgb(130, 207, 4) 1%, #E4E4F0 99%);
+  } 
+}
 
 .animated-line { 
   width:10%;

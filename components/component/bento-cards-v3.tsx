@@ -30,50 +30,12 @@ import { CustomPriceTable } from "./custom-price-table";
 
 export function BentoCardsV3() {
   return (
-    <div className="mx-auto sm:w-full md:w-5/6">
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center  justify-self-center">
-            <div className="p-8">
-            <p className="md:pt-12 text-lg font-normal text-slate-500 sm:text-start md:text-end">
-                It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your better-looking</p>
-            </div>
-
-            <div className="pl-4 pr-4 pt-4 pb-0">
-            <Card className="h-full rounded-3xl shadow-2xl overflow-hidden bg-transparent">
-                <div className="relative aspect-square">
-
-                <p className="opacity-25 font-thin p-6 text-xs absolute right-8 bottom-0 text-slate-300">ID 967890</p>
-                
-                <Image
-                    alt="Image"
-                    className="object-cover"
-                    src="/boy1.png"
-                    width= "430"
-                    height= "280"
-                    style={{
-                    objectFit: "cover",
-                    }}
-                />
-                <div className="text-slate-400 absolute bottom-8  flex flex-col items-center justify-center gap-2 p-6">
-                
-                </div>
-                </div>
-            </Card>
-            </div>
-
-            <div className="p-8">
-                <div className="flex flex-row gap-4">
-                    <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent leading-5">Clone</h1>
-                </div>
-
-
-            </div>
-        </div>
+    <div className="mx-auto sm:w-full md:w-5/6 py-6">
 
         <div className="grid grid-cols-1 md:grid-cols-3 items-center  justify-self-center">
             <div className="p-8">
             <p className="md:pt-12 text-lg font-normal text-slate-500 sm:text-start md:text-end">
-                It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your better-looking</p>
+                It's not a filter nor photoshop.<br />This is You at Your best.<br />Meet your photogenic</p>
             <h1 className="pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text sm:text-start md:text-end text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent leading-5">Clone</h1>
 
             </div>
@@ -81,8 +43,6 @@ export function BentoCardsV3() {
             <div className="pl-4 pr-4 pt-4 pb-0">
             <Card className="h-full rounded-3xl shadow-2xl overflow-hidden bg-transparent">
                 <div className="relative aspect-square">
-
-                <p className="opacity-25 font-thin p-6 text-xs absolute right-8 bottom-0 text-slate-300">ID 967890</p>
                 
                 <Image
                     alt="Image"
@@ -112,7 +72,7 @@ export function BentoCardsV3() {
                         <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-5xl md:text-8xl font-extrabold tracking-tighter text-transparent">21<span className="text-6xl">€</span><EurIcon/></h1>
                     </div>
                 </div>
-                <p className="text-lg font-normal text-slate-500 text-start">Our AI-based service able to "learn" your unique features and reproduce them down to the smallest details.</p>
+                <p className="text-lg font-normal text-slate-500 text-start">AI-based service that able to "learn" your unique features and reproduce them down to the smallest details.</p>
 
                 <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
                     <div>

@@ -25,17 +25,17 @@ export function HowItWorks() {
                 }}
               />
             </div>
-            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Generate any image of yourself</h1>
+            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Make ads with your own face</h1>
             <p className="text-center text-xs text-stone-500 dark:text-stone-400">
-            Take your social media presence to the next level.<br/>A must have if you are an influencer or Youtuber.
+            Take your business to the next level.<br/>A must have if you are an influencer or Youtuber.
             </p> 
           </div>
           <div className="flex flex-col items-center gap-4">
-            <div className="transition-colors flex items-center justify-center rounded-full border bg-gray-100 hover:bg-fuchsia-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+            <div className="transition-colors flex items-center justify-center rounded-full border bg-gray-100 hover:bg-red-600 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
-                src="/confi.png"
+                src="/kabat.png"
                 width= "337"
                 height= "600"
                 style={{
@@ -43,17 +43,17 @@ export function HowItWorks() {
                 }}
               />
             </div>
-            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Boost your self confidence</h1>
+            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Try on a real coat virtually</h1>
             <p className="text-center text-xs text-stone-500 dark:text-stone-400">
            It's strange but it works. Your AI doesn't lie, If you can visualize your better version, 
             </p>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <div className="transition-colors flex items-center justify-center rounded-full border bg-gray-100 hover:bg-emerald-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+            <div className="transition-colors flex items-center justify-center rounded-full border bg-slate-100 hover:bg-pink-200 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
-                src="/elf.png"
+                src="/vv.png"
                 width= "337"
                 height= "600"
                 style={{
@@ -61,7 +61,7 @@ export function HowItWorks() {
                 }}
               />
             </div>
-            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Remix the reality with imagination</h1>
+            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Create hot pictures for your husband</h1>
             <p className="text-center text-xs text-stone-500 dark:text-stone-400">
             A comic where you are the main character? Or a poster series in Boris Valleyo style? The possibilities are endless.
             </p>
