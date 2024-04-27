@@ -32,8 +32,10 @@ export function Youtube() {
       <h2 className="mt-8 pt-8 tracking-wide text-sm text-slate-500  transparent">Thanks for scrolling this far. Recharge yourself with:</h2>
       <h1 className="tracking-wide	mt-3 text-2xl text-slate-300  transparent">Utopia's Uplifting Songs Under</h1>
       <h1 className="bg-gradient-to-br from-stone-300 to-stone-200 bg-clip-text text-center text-5xl md:text-9xl font-extrabold tracking-tighter text-transparent leading-5">
-        3min
-        </h1>
+      3min
+      </h1>
+
+        <audio controls src="/endless.mp3" className="mx-auto mt-6 scale-80"></audio>
 
       
       <div className="py-6 grid md:grid-cols-6 items-center gap-6 md:gap-8">
@@ -110,9 +112,10 @@ function YoutubeIcon() {
 
 function ArrowLeftIcon() {
   return (
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-32 h-32 text-slate-200">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-24 h-24 text-slate-300">
   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
 </svg>
+
 
   )
 }
