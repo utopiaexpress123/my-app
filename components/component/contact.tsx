@@ -12,31 +12,38 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog";
   import { ContactCard } from "./contact-card";
+  import Image from "next/image";
 
 export function Contact() {
   return (
 
-    <div className="px-9 max-w-xl mx-auto">
+    <div className="mt-9 mb-9 rounded-3xl w-3/4 pl-9 pr-9 mx-auto relative" style={{
+      backgroundImage: `url('/contact2.png')`,
+       height: "500px",
+       backgroundSize: "cover",
+       opacity: "1",
+      }}>
+
 
     <Separator orientation="vertical" className="mt-6 h-16 bg-slate-300 mx-auto"/>
 
-    <h1 className="pt-8 pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-sky-700 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
-        Start you Automated Business!
+    <h1 className="pt-8 pb-6 animate-fade-up bg-gradient-to-br from-red-200 to-red-100 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
+        Start your Automated Business!
     </h1>
-    <p className="text-2xl tracking-tighter font-normal text-slate-600 text-center">
-    You bring the idea, I bring the tech
+    <p className="text-2xl tracking-tighter font-normal text-red-300 text-center">
+    You bring the idea, I bring the tech.
     </p>
 
       <Separator orientation="vertical" className="mt-6 h-10 bg-slate-300 mx-auto"/>
 
-      <div className="p-1 flex flex-row border h-16 border-slate-300 shadow-2xl rounded-full">
+      <div className="text-center mx-auto p-1 flex flex-row border w-1/2 h-16 border-slate-300 backdrop-blur-sm shadow-2xl rounded-full">
         <div className="pt-2 pb-2 pr-6">
-          <p className="pt-1 pl-6 text-right text-lg font-normal text-slate-400">Have you got a good use case?</p>
+          <p className="pt-1 pl-6 text-right text-lg font-normal text-red-100">Have you got a good use case?</p>
         </div>
         <Dialog>
           <DialogTrigger className="hover:text-stone-400">
-            <div className="shadow-lg py-1 float-right w-48 h-10 rounded-full bg-gradient-to-bl from-slate-900 to-sky-800 hover:from-slate-700 hover:to-sky-700 text-slate-300">   
-               Ask for Information
+            <div className="shadow-lg py-1 float-right w-28 h-10 rounded-full bg-gradient-to-bl from-slate-700 to-red-400 hover:from-slate-700 hover:to-sky-700 text-slate-300">   
+               Contact me
             </div>
           </DialogTrigger>
           <DialogContent className="rounded-xl bg-transparent shadow-none border-0">
@@ -66,6 +73,16 @@ function CopyIcon() {
 
   )
 }
+
+function InfoIcon() {
+  return (
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-4 h-4 float-right mt-1 mr-4 ml-0">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+</svg>
+  )
+}
+
+
 
 
 

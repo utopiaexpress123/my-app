@@ -7,13 +7,13 @@ import Image from "next/image";
 
 export function HowItWorks() {
   return (
-    <div className="mx-auto md:w-5/6 mt-20">
+    <div className="mx-auto md:w-3/4 mt-20">
 
       <div className="container grid items-center gap-8 px-4 md:px-6">
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
-          <div className="flex flex-col items-center gap-4">
-            <div className="transition-colors	flex items-center justify-center rounded-full border bg-gray-100 hover:bg-amber-300 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <div className="mt-6 flex flex-col items-center gap-4 transition-all bg-pink-400 hover:bg-pink-500 shadow-2xl rounded-3xl">
+            <div className="transition-colors	flex items-center justify-center rounded-full w-36 h-36 ">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
@@ -25,13 +25,10 @@ export function HowItWorks() {
                 }}
               />
             </div>
-            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Make ads with your own face</h1>
-            <p className="text-center text-xs text-stone-500 dark:text-stone-400">
-            Take your business to the next level.<br/>A must have if you are an influencer or Youtuber.
-            </p> 
+            <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Make ads with your own super photogenic face?</h1>
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="transition-colors flex items-center justify-center rounded-full border bg-gray-100 hover:bg-red-600 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+          <div className="mt-6 flex flex-col items-center gap-4 transition-all bg-red-500 hover:bg-red-600 rounded-3xl">
+            <div className="transition-colors flex items-center justify-center  w-36 h-36 ">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
@@ -43,13 +40,10 @@ export function HowItWorks() {
                 }}
               />
             </div>
-            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Try on a real coat virtually</h1>
-            <p className="text-center text-xs text-stone-500 dark:text-stone-400">
-           It's strange but it works. Your AI doesn't lie, If you can visualize your better version, 
-            </p>
+            <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Try on a real coat virtually at home?</h1>
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="transition-colors flex items-center justify-center rounded-full border bg-slate-100 hover:bg-pink-200 w-36 h-36 border-gray-200 dark:border-gray-800 dark:bg-gray-950">
+          <div className="mt-6 flex flex-col items-center gap-4 bg-stone-800 hover:bg-stone-900 rounded-3xl">
+            <div className="transition-colors flex items-center justify-center  w-36 h-36">
               <Image
                 alt="Image"
                 className="object-cover pb-8"
@@ -61,13 +55,54 @@ export function HowItWorks() {
                 }}
               />
             </div>
-            <h1 className="pt-4 pb-0 pl-3 pr-3 text-slate-500 text-3xl tracking-tighter text-center">Create hot pictures for your husband</h1>
-            <p className="text-center text-xs text-stone-500 dark:text-stone-400">
-            A comic where you are the main character? Or a poster series in Boris Valleyo style? The possibilities are endless.
-            </p>
+            <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">...or create surprise photos for your husband?</h1>
+          </div>
+        </div>
+
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <div className="transition-all mt-6 flex flex-col items-center gap-4 bg-rose-500 hover:bg-gray-400 rounded-3xl">
+            <div className="transition-colors	flex items-center justify-center  w-36 h-36">
+              <Image
+                alt="Image"
+                className="object-cover pb-8"
+                src="/shoe.png"
+                width= "437"
+                height= "600"
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Create product photos in any enviroment</h1>
+          </div>
+
+          <div className="transition-all mt-6 flex flex-col items-center gap-4 bg-amber-500 hover:bg-gray-400 rounded-3xl">
+            <div className="transition-colors	flex items-center justify-center w-42 h-36">
+              <Image
+                alt="Image"
+                className="object-cover"
+                src="/house.png"
+                width= "337"
+                height= "600"
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Interior Design based on a sketch or photo</h1>
+          </div>
+
+          <div className="transition-all mt-6 flex flex-col items-center gap-4 bg-transparent  rounded-3xl">
+            <div className="transition-colors	flex items-center justify-center w-42 h-36">
+              <Idea2Icon/>
+            </div>
+            <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-300 text-xl tracking-tight text-center">I'm just a developer, you probably have better ideas</h1>
           </div>
 
         </div>
+
+
+
       </div>
 
     </div>
@@ -75,52 +110,23 @@ export function HowItWorks() {
 }
 
 
-function CodeIcon() {
+function IdeaIcon() {
   return (
-    <svg
-    className="w-8 h-8 text-gray-500 dark:text-gray-400" 
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="16 18 22 12 16 6" />
-      <polyline points="8 6 2 12 8 18" />
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-24 h-24 text-slate-300 mt-8">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+</svg>
   )
 }
 
 
-function BuildingIcon() {
+
+function Idea2Icon() {
   return (
-    <svg className="w-8 h-8 text-gray-500 dark:text-gray-400"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
-      <path d="M9 22v-4h6v4" />
-      <path d="M8 6h.01" />
-      <path d="M16 6h.01" />
-      <path d="M12 6h.01" />
-      <path d="M12 10h.01" />
-      <path d="M12 14h.01" />
-      <path d="M16 10h.01" />
-      <path d="M16 14h.01" />
-      <path d="M8 10h.01" />
-      <path d="M8 14h.01" />
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-24 h-24 text-slate-300 mt-16">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+
+
   )
 }
 

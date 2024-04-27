@@ -64,7 +64,7 @@ export function Tamas() {
             </div>
 
             <div className="md:col-span-4">
-                <p className="text-pink-100 md:pt-12 text-2xl italic md:text-left">a machine better than me</p>
+                <p className="text-pink-100 md:pt-12 text-2xl italic md:text-left">a machine is better than me</p>
                 <p className="md:text-left text-lg font-normal text-pink-300 sm:text-center">
                  in so many things.
                 </p> 
@@ -97,7 +97,7 @@ export function Tamas() {
         <p className="pt-4 text-lg font-normal text-pink-100 text-center">but I also got super excited</p>
 
         
-        <h1 className="italic bg-gradient-to-br from-pink-100 to-pink-200 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-md [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">How does it do?</h1>
+        <h1 className="italic bg-gradient-to-br from-pink-100 to-pink-200 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-md [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">How does it work?</h1>
 
         <Separator orientation="vertical" className="h-32 mt-4 mb-6 bg-pink-400 mx-auto"/> 
 
