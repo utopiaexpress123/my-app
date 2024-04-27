@@ -4,17 +4,8 @@
  */
 "use client"
 import { CardContent, Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-
+import { Separator } from "@/components/ui/separator";
 
 
 export function ContactCard() {
@@ -43,20 +34,20 @@ export function ContactCard() {
       <div className="border-t border-gray-200 dark:border-gray-800" />
       <CardContent className="p-4">
         <dl className="grid gap-2 text-sm">
-          <div className="flex">
-              <dt className="w-1/3 text-slate-400">Twitter</dt>
-            <Link href="https://twitter.com/KontoTamas">
-              <dd className="text-right ml-auto">@KontoTamas</dd>
-            </Link>
-          </div>
-          <div className="flex">
-            <dt className="w-1/3 text-slate-400">Email</dt>
+          <div className="flex border-b pb-2">
+            <dt className="w-1/4 text-slate-400">Email</dt>
             <Link href="mailto:tamas@utopia.express">
             <dd className="text-right ml-auto">tamas@utopia.express</dd>
             </Link>
           </div>
-          <div className="flex">
-            <dt className="w-1/3 text-slate-400">FB</dt>
+          <div className="flex border-b pb-2">
+              <dt className="w-1/4 text-slate-400">Twitter</dt>
+            <Link href="https://twitter.com/KontoTamas">
+              <dd className="text-right ml-auto">@KontoTamas</dd>
+            </Link>
+          </div>
+          <div className="flex ">
+            <dt className="w-1/4 text-slate-400">Messenger</dt>
             <Link href="https://www.facebook.com/kontotamas">
             <dd className="text-end">kontotamas</dd>
             </Link>
@@ -65,60 +56,6 @@ export function ContactCard() {
       </CardContent>
     </Card>
 
-    <Card className="w-full max-w-sm mx-auto rounded-2xl shadow-xl shadow-stone-950/90">
-      <div className="p-2 flex items-center gap-4">
-        <img
-          alt="Avatar"
-          className="rounded-full"
-          height="64"
-          src="/lucy.png"
-          style={{
-            aspectRatio: "64/64",
-            objectFit: "cover",
-          }}
-          width="64"
-        />
-        <div className="grid gap-1.5">
-          <div>
-            <h3 className="text-lg font-bold">Lucy</h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Tamas's AI Assistant</p>
-          </div>
-        </div>
-      </div>
-      <div className="border-t border-gray-200 dark:border-gray-800" />
-      <CardContent className="p-4">
-        <dl className="grid gap-2 text-sm">
-          <div className="flex">
-            <dt className="w-1/3 text-slate-400">Email</dt>
-            <dd className="text-right ml-auto">admin@utopia.express</dd>
-          </div>
-          <div className="flex">
-            <dd className="text-center mx-auto">
-
-              <Sheet>
-                <SheetTrigger className="relative">
-                <Button className="ghost disabled:opacity-75">Ask Lucy</Button>
-                <div className="absolute top-0 right-0">
-                  <span className="relative flex h-4 w-4">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-4 w-4 bg-lime-500"></span>
-                  </span>
-                </div>
-                </SheetTrigger>
-                <SheetContent className=" bg-stone-950 border-none">
-                  <SheetHeader>
-                    <SheetTitle></SheetTitle>
-                    <SheetDescription>
-                       
-                    </SheetDescription>
-                  </SheetHeader>
-                </SheetContent>
-              </Sheet>
-            </dd>
-          </div>
-        </dl>
-      </CardContent>
-    </Card>
     </div>
 
 

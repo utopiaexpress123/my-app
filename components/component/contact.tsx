@@ -48,7 +48,6 @@ export function Contact() {
           </DialogTrigger>
           <DialogContent className="rounded-xl bg-transparent shadow-none border-0">
               <DialogHeader>
-                <DialogTitle className="pb-9 text-slate-500">How can we help you?</DialogTitle>
                   <DialogDescription>
                         <ContactCard/>
                   </DialogDescription>
