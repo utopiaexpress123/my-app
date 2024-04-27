@@ -19,11 +19,11 @@ import { ThreeSteps } from "./three-steps";
 
 export function Lucy() {
   return (
-      <div className="mt-6 mb-6 pb-10 bg-gradient-to-br from-lime-500 to-blue-500 mx-auto shadow-xl rounded-3xl border border-slate-300 sm:w-full md:w-2/3">
+      <div className="mt-10 pb-10 bg-gradient-to-br from-lime-500 to-blue-500 mx-auto shadow-xl rounded-3xl border border-slate-300 md:w-2/3">
 
         <div className="gap-8 mx-auto">
         
-          <h1 className="p-12 mt-10 animate-fade-up bg-gradient-to-br from-lime-100 to-slate-100 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
+          <h1 className="p-12 mt-10 animate-fade-up bg-gradient-to-br from-lime-100 to-slate-100 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-4xl md:text-5xl md:leading-[3rem]">
             <div className="relative">
               <div className="absolute">
                 <span className="relative flex h-4 w-4">
@@ -45,8 +45,9 @@ export function Lucy() {
             Meet Lucy, Your Research Assistant
           </h1>
 
-          <ThreeSteps/>
+            <ThreeSteps/>
 
+        
           <p className="text-2xl italic font-normal text-slate-200 text-center md:ml-8 md:mr-8 md:pl-8 md:pr-8">
                 Lucy helps you refine your search, find reliable sources, 
                 and interpret the information obtained. Just chat with her.

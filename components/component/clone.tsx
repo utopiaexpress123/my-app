@@ -48,7 +48,7 @@ export function Clone() {
         Or anything.   
         </p>
         
-        <p className="text-left pt-4 pb-4">
+        <p className="sm:text-center text-left sm:pt-0 pt-4 pb-4">
             <Dialog>
                             <DialogTrigger>
                             <Button className="mt-2 h-13 bg-transparent border border-slate-100 hover:border-fuchsia-200 hover:bg-slate-100 shadow-fuchsia-600/10 hover:shadow-fuchsia-400/20 shadow-xl hover:shadow-xl text-stone-500 hover:text-gray-500">

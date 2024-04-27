@@ -17,7 +17,7 @@ import {
 export function Contact() {
   return (
 
-    <div className="mt-9 mb-9 rounded-3xl w-3/4 pl-9 pr-9 mx-auto relative" style={{
+    <div className="mt-9 mb-9 rounded-3xl md:w-2/3 pl-9 pr-9 mx-auto relative" style={{
       backgroundImage: `url('/contact2.png')`,
        height: "500px",
        backgroundSize: "cover",
@@ -25,24 +25,24 @@ export function Contact() {
       }}>
 
 
-    <Separator orientation="vertical" className="mt-6 h-16 bg-slate-300 mx-auto"/>
+    <Separator orientation="vertical" className="mt-6 h-16 bg-red-300 mx-auto"/>
 
-    <h1 className="pt-8 pb-6 animate-fade-up bg-gradient-to-br from-red-200 to-red-100 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
+    <h1 className="pt-8 pb-6 animate-fade-up bg-gradient-to-br from-red-200 to-white bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
         Start your Automated Business!
     </h1>
-    <p className="text-2xl tracking-tighter font-normal text-red-300 text-center">
+    <p className="text-3xl tracking-tighter font-normal text-red-200 text-center">
     You bring the idea, I bring the tech.
     </p>
 
-      <Separator orientation="vertical" className="mt-6 h-10 bg-slate-300 mx-auto"/>
+      <Separator orientation="vertical" className="mt-6 mb-4 h-12 bg-red-300 mx-auto"/>
 
-      <div className="text-center mx-auto p-1 flex flex-row border w-1/2 h-16 border-slate-300 backdrop-blur-sm shadow-2xl rounded-full">
+      <div className="text-center mx-auto flex flex-row border w-96 h-16 border-slate-300 hover:border-orange-300 backdrop-blur-md shadow-2xl shadow-red-900/70 rounded-full">
         <div className="pt-2 pb-2 pr-6">
-          <p className="pt-1 pl-6 text-right text-lg font-normal text-red-100">Have you got a good use case?</p>
+          <p className="pt-3 pl-8 text-right text-sm font-normal text-red-100">Have you got a good use case?</p>
         </div>
         <Dialog>
           <DialogTrigger className="hover:text-stone-400">
-            <div className="shadow-lg py-1 float-right w-28 h-10 rounded-full bg-gradient-to-bl from-slate-700 to-red-400 hover:from-slate-700 hover:to-sky-700 text-slate-300">   
+            <div className="text-sm shadow-lg pt-2 mr-3 float-right w-28 h-10 rounded-full bg-gradient-to-b from-amber-300 to-orange-400 hover:from-amber-400 hover:to-orange-500 text-slate-600">   
                Contact me
             </div>
           </DialogTrigger>

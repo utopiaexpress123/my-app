@@ -29,55 +29,39 @@ import {
 
 export function Tamas() {
   return (
-    <div className="pb-6 bg-gradient-to-br from-pink-400 to-fuchsia-500 mx-auto shadow-xl rounded-3xl border border-slate-300 sm:w-full md:w-2/3">
+    <div className="px-1 bg-gradient-to-br from-pink-400 to-fuchsia-500 mx-auto shadow-xl rounded-3xl border border-slate-300 sm:w-full md:w-2/3">
 
         <Separator orientation="vertical" className="h-16 mt-4 mb-2 bg-pink-400 mx-auto"/>   
 
-        <div className="grid md:grid-cols-10 gap-8">
 
-            <div className="md:col-span-4">
-                <p className="md:pt-12 text-lg font-normal text-pink-300 sm:text-center md:text-end">
-                I'm a web developer who one day 
-                </p>
-                <p className="text-pink-100 text-2xl italic md:text-right sm:text-center drop-shadow-sm">woke up to the fact</p>
-            </div>
-
-            <div className="md:col-span-2 relative">
-            <Card className="rounded-full shadow-2xl shadow-pink-800/60 overflow-hidden bg-gray-100">
-                <div className="aspect-square">
-                
+        <div className="">
+            <p className="w-full md:pt-12 text-xl font-normal text-pink-300 text-center">
+              I'm a web developer who one day 
+            </p>
+            <p className="text-pink-100 text-3xl italic text-center drop-shadow-sm">woke up to the fact</p>
+            <br/>
                 <Image
                     alt="Image"
-                    className="object-cover rounded-full border border-pink-600"
+                    className="shadow-xl shadow-pink-800/60 mx-auto object-cover rounded-full border border-pink-600 bg-slate-200"
                     src="/kontotamas2.png"
-                    width= "400"
-                    height= "400"
+                    width= "140"
+                    height= "040"
                     style={{
                     objectFit: "cover",
                     }}
                 />
-                </div>
-            </Card>
-            <Link href="#" className="bg-slate-200 text-slate-400 rounded-full absolute top-16 right-4 p-1">
-                <MessageIcon/>
-            </Link>
-            </div>
 
-            <div className="md:col-span-4">
-                <p className="text-pink-100 md:pt-12 text-2xl italic md:text-left">a machine is better than me</p>
-                <p className="md:text-left text-lg font-normal text-pink-300 sm:text-center">
-                 in so many things.
-                </p> 
-
-            </div>
+            <p className="text-pink-100 pt-8 text-3xl italic text-center">a machine is better than me</p>
+            <p className="text-xl font-normal text-pink-300 text-center">
+              in so many things.
+            </p> 
         </div>
 
 
-        <Separator orientation="vertical" className="h-32 mt-4 mb-2 bg-pink-400 mx-auto"/>  
-        <div className="">      
+        <Separator orientation="vertical" className="h-32 mt-4 mb-2 bg-pink-400 mx-auto"/>       
             <Image
                     alt="Image"
-                    className="object-cover scale-75"
+                    className="object-cover"
                     src="/car.png"
                     width= "1111"
                     height= "185"
@@ -85,30 +69,24 @@ export function Tamas() {
                     objectFit: "cover",
                     }}
                 />
-        <p className="text-pink-100 text-2xl italic text-center">...existential crisis kicked in</p>
-        <p className=" text-lg font-normal text-slate-500 text-center">
-        
-        </p>
-        <Separator orientation="vertical" className="h-32 mt-4 mb-2 bg-pink-400 mx-auto"/>  
-
-        </div>
- 
+          <p className="text-pink-100 text-3xl italic text-center">...existential crisis kicked in</p>
+          <Separator orientation="vertical" className="h-32 mt-4 mb-2 bg-pink-400 mx-auto"/>  
     
-        <p className="pt-4 text-lg font-normal text-pink-100 text-center">but I also got super excited</p>
+          <p className="pt-4 text-lg font-normal text-pink-100 text-center">but I also got super excited</p>
 
         
-        <h1 className="italic bg-gradient-to-br from-pink-100 to-pink-200 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-md [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">How does it work?</h1>
+          <h1 className="italic bg-gradient-to-br from-pink-100 to-pink-200 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-md [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">How does it work?</h1>
 
-        <Separator orientation="vertical" className="h-32 mt-4 mb-6 bg-pink-400 mx-auto"/> 
+          <Separator orientation="vertical" className="h-32 mt-4 mb-6 bg-pink-400 mx-auto"/> 
 
-        <p className="md:mx-auto text-lg font-normal text-pink-100 text-center">
-        So I dig deeper and deeper down the rabbit hole
-        </p>
-        <p className="md:mx-auto text-6xl font-extrabold text-pink-100 text-center">
-        &
-        </p>
+          <p className="md:mx-auto text-xl font-normal text-pink-100 text-center">
+          So I dig deeper and deeper down the rabbit hole
+          </p>
+          <p className="md:mx-auto text-8xl font-extrabold text-pink-100 text-center">
+          &
+          </p>
 
-        <p className="text-pink-300 text-2xl italic text-center pb-10 mb-6">that's why I build things to make Your transition easier.</p>  
+          <p className="text-pink-300 text-3xl italic text-center pb-10 mb-6">that's why I build things to make Your transition easier.</p>  
 
     </div>
   )
