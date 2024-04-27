@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function MainHeroV3() {
   return (
-      <div className="text-center text-gray-800 dark:text-gray-100">
+      <div className="py-10 text-center text-gray-800 dark:text-gray-100">
 
           <Button className="h-9 bg-transparent border border-transparent hover:border-fuchsia-200 hover:bg-slate-100 shadow-stone-400/10 hover:shadow-fuchsia-400/20 shadow-xl hover:shadow-xl text-stone-500 hover:text-gray-500" asChild>
             <Link href="#">

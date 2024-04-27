@@ -29,7 +29,7 @@ import {
 
 export function Tamas() {
   return (
-    <div className="bg-gradient-to-br from-pink-400 to-fuchsia-500 mx-auto shadow-xl rounded-3xl border border-slate-300">
+    <div className="md:w-5/6 mb-9 p-9 bg-gradient-to-br from-pink-400 to-fuchsia-500 mx-auto shadow-xl rounded-3xl border border-slate-300">
 
         <Separator orientation="vertical" className="h-16 mt-4 mb-2 bg-pink-400 mx-auto"/>   
 
@@ -86,7 +86,7 @@ export function Tamas() {
           &
           </p>
 
-          <p className="text-pink-300 text-3xl italic text-center pb-10 mb-6">that's why I build things to make Your transition easier.</p>  
+          <p className="text-pink-300 text-3xl italic text-center pt-2 pb-10 mb-6">that's why I build things to make<br/>Your transition easier.</p>  
 
     </div>
   )

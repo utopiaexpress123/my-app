@@ -19,7 +19,7 @@ import { ThreeSteps } from "./three-steps";
 
 export function Lucy() {
   return (
-      <div className="bg-gradient-to-br from-lime-500 to-blue-500 mx-auto shadow-xl rounded-3xl border border-slate-300">
+      <div className="md:w-5/6 mb-9 bg-gradient-to-br from-lime-500 to-blue-500 mx-auto shadow-xl rounded-3xl border border-slate-300">
 
         <div className="gap-8 mx-auto">
         

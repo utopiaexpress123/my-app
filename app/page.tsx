@@ -11,7 +11,7 @@ import { Contact } from "@/components/component/contact";
 export default function Home() {
   return (
 
-      <div className="sm:w-full md:w-5/6 mx-auto py-6 px-6">
+      <div className="sm:w-full md:w-3/4 mx-auto py-6 px-6">
         <MainHeroV3/>
         <Tamas/>
         <Lucy/>  

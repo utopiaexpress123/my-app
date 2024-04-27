@@ -30,8 +30,8 @@ import { CustomPriceTable } from "./custom-price-table";
 
 export function BentoCardsV3() {
   return (
-    <div className="mx-auto sm:w-full md:w-5/6 py-6">
-
+    <div className="mr-8 ml-8">
+hhhhhhhhhh
         <div className="grid grid-cols-1 md:grid-cols-3 items-center  justify-self-center">
             <div className="p-8">
             <p className="md:pt-12 text-lg font-normal text-slate-500 sm:text-start md:text-end">
