@@ -11,19 +11,17 @@ import { Contact } from "@/components/component/contact";
 export default function Home() {
   return (
 
-    <div className="pb-20">
-
-      <div className="pt-20">
+      <div className="sm:w-full md:w-5/6 mx-auto py-6 px-6">
         <MainHeroV3/>
+        <Tamas/>
+        <Lucy/>  
+        <Clone/>
+        <HowItWorks/> 
+        <Contact/>    
+        <Youtube/>
       </div>
-      <Tamas/>
-      <Lucy/>  
-      <Clone/>
-      <HowItWorks/> 
-      <Contact/>    
-<Youtube/>
           
-    </div>
+
 
     
   );

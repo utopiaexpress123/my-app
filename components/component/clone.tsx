@@ -19,7 +19,7 @@ import { ThreeSteps } from "./three-steps";
 
 export function Clone() {
   return (
-    <div className="mx-auto md:w-2/3 shadow-xl border border-slate-300 rounded-3xl">
+    <div className="shadow-xl border border-slate-300 rounded-3xl">
 
 
       <div className="py-8 gap-8 mx-auto">

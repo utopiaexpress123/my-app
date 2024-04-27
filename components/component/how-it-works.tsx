@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function HowItWorks() {
   return (
-    <div className="mx-auto md:w-3/4 mt-20">
+    <div className="mt-20">
 
       <div className="container grid items-center gap-8 px-4 md:px-6">
 

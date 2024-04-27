@@ -17,7 +17,7 @@ import {
 export function Contact() {
   return (
 
-    <div className="mt-9 mb-9 rounded-3xl md:w-2/3 pl-9 pr-9 mx-auto relative" style={{
+    <div className="mt-9 mb-9 rounded-3xl relative" style={{
       backgroundImage: `url('/contact2.png')`,
        height: "500px",
        backgroundSize: "cover",

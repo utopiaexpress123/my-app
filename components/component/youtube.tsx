@@ -28,7 +28,7 @@ import {
 
 export function Youtube() {
   return (
-    <div className="mx-auto md:w-3/4 p-6 text-center shadow-2xl rounded-3xl bg-gradient-to-br from-stone-950 to-stone-800">
+    <div className="text-center shadow-2xl rounded-3xl bg-gradient-to-br from-stone-950 to-stone-800">
       <h2 className="mt-8 pt-8 tracking-wide text-sm text-slate-500  transparent">Thanks for scrolling this far. Recharge yourself with:</h2>
       <h1 className="tracking-wide	mt-3 text-2xl text-slate-300  transparent">Utopia's Uplifting Songs Under</h1>
       <h1 className="bg-gradient-to-br from-stone-300 to-stone-200 bg-clip-text text-center text-8xl md:text-9xl font-extrabold tracking-tighter text-transparent ">

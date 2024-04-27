@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 export function Footer() {
     return (
-    <div className="w-full pl-6 pr-6 text-left">
+    <div className="text-left">
 
             <p className="text-left text-xs text-gray-300">utopia.express 2023.</p>
             <div className="flex flex-row w-full text-xs mx-auto pt-2 pb-4 text-gray-400">
