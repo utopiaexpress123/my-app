@@ -12,7 +12,7 @@ export function HowItWorks() {
       <div className="container grid items-center gap-8 px-4 md:px-6">
 
         <div className="grid  md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          <div className="mt-6 sm:mb-8 flex flex-col items-center gap-4 transition-all bg-pink-400 hover:bg-pink-500 shadow-2xl rounded-3xl">
+          <div className="mt-6 sm:mb-8 flex flex-col items-center gap-4 transition-all bg-sky-400 hover:bg-sky-500 shadow-2xl rounded-3xl">
             <div className="transition-colors	flex items-center justify-center rounded-full w-36 h-36 ">
               <Image
                 alt="Image"
@@ -27,7 +27,7 @@ export function HowItWorks() {
             </div>
             <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Make ads with your own super photogenic face?</h1>
           </div>
-          <div className="mt-6 sm:mb-8 flex flex-col items-center gap-4 transition-all bg-red-500 hover:bg-red-600 rounded-3xl">
+          <div className="mt-6 sm:mb-8 flex flex-col items-center gap-4 transition-all bg-lime-600 hover:bg-red-600 rounded-3xl">
             <div className="transition-colors flex items-center justify-center  w-36 h-36 ">
               <Image
                 alt="Image"
@@ -42,7 +42,7 @@ export function HowItWorks() {
             </div>
             <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Try on a real coat virtually at home?</h1>
           </div>
-          <div className="mt-6 sm:mb-8 flex flex-col items-center gap-4 bg-stone-800 hover:bg-stone-900 rounded-3xl">
+          <div className="mt-6 sm:mb-8 flex flex-col items-center gap-4 bg-pink-400 hover:bg-stone-900 rounded-3xl">
             <div className="transition-colors flex items-center justify-center  w-36 h-36">
               <Image
                 alt="Image"
@@ -60,14 +60,14 @@ export function HowItWorks() {
         </div>
 
         <div className="grid  md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          <div className="transition-all mt-6 sm:mb-8 flex flex-col items-center gap-4 bg-rose-500 hover:bg-gray-400 rounded-3xl">
+          <div className="transition-all mt-6 sm:mb-8 flex flex-col items-center gap-4 bg-amber-600 hover:bg-gray-400 rounded-3xl">
             <div className="transition-colors	flex items-center justify-center  w-36 h-36">
               <Image
                 alt="Image"
-                className="object-cover pb-8"
+                className="object-cover"
                 src="/shoe.png"
-                width= "437"
-                height= "600"
+                width= "674"
+                height= "550"
                 style={{
                   objectFit: "cover",
                 }}
@@ -76,18 +76,20 @@ export function HowItWorks() {
             <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Create product photos in any enviroment</h1>
           </div>
 
-          <div className="transition-all mt-6 sm:mb-8 flex flex-col items-center gap-4 bg-amber-500 hover:bg-gray-400 rounded-3xl">
+          <div className="transition-all mt-6 sm:mb-8 flex flex-col items-center gap-4 bg-gray-700 hover:bg-gray-800 shadow-lg rounded-3xl">
             <div className="transition-colors	flex items-center justify-center w-42 h-36">
+              <div className="p-1">
               <Image
                 alt="Image"
-                className="object-cover"
-                src="/house.png"
-                width= "337"
-                height= "600"
+                className="-rotate-3 object-cover rounded-3xl shadow-lg shadow-gray-900/50"
+                src="/room.gif"
+                width= "387"
+                height= "263"
                 style={{
                   objectFit: "cover",
                 }}
               />
+              </div>
             </div>
             <h1 className="pt-4 pb-6 pl-2 pr-2 text-slate-100 text-xl tracking-tight text-center">Interior Design based on a sketch or photo</h1>
           </div>
